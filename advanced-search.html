@@ -168,7 +168,7 @@
               </div>
             </div>
           </form>
-          <div class="d-none d-sm-inline-block"><a href="#" class="text-xs font-weight-bold text-primary text-uppercase mt-1"> Busqueda avanzada</a></div>
+          <div class="d-none d-sm-inline-block"><a href="#" class="text-xs font-weight-bold text-primary text-uppercase mt-1">Busqueda avanzada</a></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -190,7 +190,7 @@
                     </div>
                   </div>
                 </form>
-                <div class="text-xs font-weight-bold text-primary text-uppercase mt-3"><a href="#">Busqueda avanzada</a></div>
+                <div class="text-xs font-weight-bold text-primary text-uppercase mt-3"><a href="#"> Busqueda avanzada</a></div>
               </div>
             </li>
 
@@ -339,237 +339,38 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Resultados de Búsqueda</h1>
+            <h1 class="h3 mb-0 text-gray-800">Búsqueda avanzada</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
 
           <!-- Content Row -->
 
-          <div class="result">
+          <form class="advanced-search">
 
-          	<div class="row">
-
-          	<div class="col-xs-12 col-md-auto">
-          		<div class="bg-light rounded side">
-          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu" aria-expanded="false">Filtrar según Categorías</a>
-
-          			<div class="d-md-block pb-3 collapse" id="searchresults-menu" aria-expanded="true" style="">
-                  <!-- Card with Header - Dropdown -->
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">Categorias</h6>
-                      <div class="dropdown no-arrow">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                          <div class="dropdown-header">Dropdown Header:</div>
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
-                      <!-- Content -->
-                      <ul class="list-group list-group-flushh">
-
-                        <li class="list-group-item list-group-item-action px-2">
-                            <a href="#" class="d-block px-1 filtercateg " data-categid="12769">/Procesos/test
-                              <span class="badge badge-secondary float-right">1</span>
-                            </a>
-                        </li>
-
-                        <li class="list-group-item list-group-item-action px-2">
-                            <a href="#" class="d-block px-1 filtercateg " data-categid="13094">/Procesos/test2
-                              <span class="badge badge-secondary float-right">1</span>
-                            </a>
-                        </li>
-
-                        <li class="list-group-item list-group-item-action px-2">
-                            <a href="#" class="d-block px-1 filtercateg " data-categid="10560">/Comercial/Ventas
-                              <span class="badge badge-secondary float-right">1</span>
-                            </a>
-                        </li>
-
-                      </ul>
-                    </div>
-                  </div>
-
-          			</div>
-          		</div>
-
-              <div class="bg-light rounded side">
-          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu2" aria-expanded="false">Filtrar según Precio</a>
-
-          			<div class="d-md-block pb-3 collapse" id="searchresults-menu2" aria-expanded="true" style="">
-
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary">Rango</h6>
-                    </div>
-                    <div class="card-body">
-                      <!-- Content -->
-                      <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label>Min</label>
-                        <input type="number" class="form-control" id="inputEmail4" placeholder="$0">
-                      </div>
-                      <div class="form-group col-md-6 text-right">
-                        <label>Max</label>
-                        <input type="number" class="form-control" placeholder="$1,0000">
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-
-                  </div>
-
-                  <div class="bg-light rounded side">
-                    <a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu3" aria-expanded="false">Filtrar según Marca</a>
-
-                    <div class="d-md-block pb-3 collapse" id="searchresults-menu3" aria-expanded="true" style="">
-
-                      <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                          <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                        </div>
-                        <div class="card-body">
-                          <!-- Content -->
-                          <div class="custom-control custom-checkbox">
-                            <span class="badge badge-secondary float-right">1</span>
-                              <input type="checkbox" class="custom-control-input" id="Check1">
-                              <label class="custom-control-label" for="Check1">Samsung</label>
-                          </div> <!-- form-check.// -->
-
-                          <div class="custom-control custom-checkbox">
-                            <span class="badge badge-secondary float-right">1</span>
-                              <input type="checkbox" class="custom-control-input" id="Check2">
-                            <label class="custom-control-label" for="Check2">Black berry</label>
-                          </div> <!-- form-check.// -->
-
-                          <div class="custom-control custom-checkbox">
-                            <span class="badge badge-secondary float-right">1</span>
-                              <input type="checkbox" class="custom-control-input" id="Check3">
-                              <label class="custom-control-label" for="Check3">Samsung</label>
-                          </div> <!-- form-check.// -->
-
-                          <div class="custom-control custom-checkbox">
-                            <span class="badge badge-secondary float-right">1</span>
-                              <input type="checkbox" class="custom-control-input" id="Check4">
-                              <label class="custom-control-label" for="Check4">Other Brand</label>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-user" id="" placeholder="Buscar...">
                 </div>
-
-          			</div>
-
-                <div class="col searchresults">
-
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                      <h6 class="m-0 font-weight-bold text-primary"><span>3</span> resultados para: <span class="font-weight-bold">"document"</span></h6>
-                    </div>
-                    <div class="card-body">
-                      <!-- Content -->
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-action">
-                              <a href="/2-Documentos/" class="d-block"><h5>Documentos</h5></a>
-                              <div class="text-secondary properties">
-                                <div class="float-left">
-                                    <i class="fas fa-box mr-2"></i>Contenedor
-                                </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-calendar mx-2"></i>22/02/2016
-                                 </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-user mx-2"></i>Admin
-                                 </div>
-                              </div>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                              <a href="/2-Documentos/" class="d-block"><h5>Documentos</h5></a>
-                              <div class="text-secondary properties">
-                                <div class="float-left">
-                                    <i class="fas fa-box mr-2"></i>Contenedor
-                                </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-calendar mx-2"></i>22/02/2016
-                                 </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-user mx-2"></i>Admin
-                                 </div>
-                              </div>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                              <a href="/2-Documentos/" class="d-block"><h5>Documentos</h5></a>
-                              <div class="text-secondary properties">
-                                <div class="float-left">
-                                    <i class="fas fa-box mr-2"></i>Contenedor
-                                </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-calendar mx-2"></i>22/02/2016
-                                 </div>
-                                 <div class="float-right ml-3">
-                                     <i class="fas fa-user mx-2"></i>Admin
-                                 </div>
-                              </div>
-                        </li>
-                    </ul>
-
-                    <div class="paging mt-4">
-                        <nav aria-label="Paginado">
-                          <ul class="pagination justify-content-center">
-
-                              <li class="page-item page-prev disabled">
-                                <span class="page-link" aria-label="Anterior"><span aria-hidden="true">«</span></span>
-                              </li>
-                              <li class="page-item page page-start active">
-                                  <a class="page-link" href="#">1</a>
-                                </li>
-                              <li class="page-item page ">
-                                  <a class="page-link" href="#">2</a>
-                                </li>
-                              <li class="page-item page ">
-                                  <a class="page-link" href="#">6</a>
-                                </li>
-                              <li class="page-item disabled">
-                                <span class="page-link">...</span>
-                              </li>
-                              <li class="page-item page page-last ">
-                                <a class="page-link" href="#">20</a>
-                              </li>
-                              <li class="page-item page-next page">
-                                <a class="page-link" aria-label="Siguiente" href="#">
-                                  <span aria-hidden="true">»</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                    </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                   </div>
-
-              	</div>
-
-          		</div>
-
-          	</div>
-
-          	</div>
-          </div>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary">
+                  Buscar
+                </a>
+              </form>
 
           <!-- End of Content Row -->
+
+          </div>
+
+        </div>
+
+
 
         </div>
         <!-- /.container-fluid -->
