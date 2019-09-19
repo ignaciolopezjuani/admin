@@ -47,3 +47,16 @@
   });
 
 })(jQuery); // End of use strict
+
+
+// Desarrollo
+
+// Busqueda
+
+$('.to-results').click(function() {
+ window.location = "search-results.html";
+});
+
+$('.search-assist-trigger').click(function() {
+   $(".search-assist-cont").toggleClass("show");
+});
