@@ -160,15 +160,51 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-2 ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-1 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-1 small search-assist-trigger" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary to-results" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
             </div>
           </form>
-          <div class="d-none d-sm-inline-block"><a href="#" class="text-xs font-weight-bold text-primary text-uppercase mt-1"> Busqueda avanzada</a></div>
+          <!-- Search assist -->
+          <div class="dropdown-menu dropdown search-assist-cont" x-placement="bottom-start" style="padding: 0;max-width: 300px;position: absolute;will-change: transform;top: 0px;left: 0px;transform: translate3d(200px, 75px, 0px);border: none;">
+	            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in show" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header text-uppercase font-weight-bold">Asistente de búsqueda</h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span>palabra buscada</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-fw fa-folder text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>buscada</div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>Palabra buscada</div>
+                </a>
+                <h6 class="dropdown-header text-center text-uppercase font-weight-bold"><a class="dropdown-items text-white" href="#">Mostrar todos los resultados</a></h6>
+              </div>
+          </div>
+          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">Búsqueda avanzada</a></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -208,18 +244,18 @@
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-primary">
+                    <div class="icon-circle bg-danger">
                       <i class="fas fa-file-alt text-white"></i>
                     </div>
                   </div>
                   <div>
                     <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">Publicaci�n pendiente</span>
+                    Publicación pendiente
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-success">
+                    <div class="icon-circle bg-warning">
                       <i class="fas fa-donate text-white"></i>
                     </div>
                   </div>
@@ -230,16 +266,16 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-warning">
+                    <div class="icon-circle bg-success">
                       <i class="fas fa-exclamation-triangle text-white"></i>
                     </div>
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Revisi�n pendiente
+                    Revisión pendiente
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                <a class="dropdown-item text-center small dropdown-header text-white" href="notifications.html">Mostrar todas las alertas</a>
               </div>
             </li>
 
@@ -258,7 +294,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
+                    <!-- <div class="status-indicator bg-success"></div> -->
                   </div>
                   <div class="font-weight-bold">
                     <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
@@ -268,7 +304,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                    <div class="status-indicator"></div>
+                    <!-- <div class="status-indicator"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
@@ -278,7 +314,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                    <div class="status-indicator bg-warning"></div>
+                    <!-- <div class="status-indicator bg-warning"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
@@ -288,14 +324,14 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
+                    <!-- <div class="status-indicator bg-success"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                <a class="dropdown-item text-center small dropdown-header text-white" href="#">Read More Messages</a>
               </div>
             </li>
 
@@ -308,23 +344,21 @@
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in p-0 mt-1" aria-labelledby="userDropdown">
+                <h6 class="dropdown-item dropdown-header p-2 bg-primary text-white">
+                  Configuración de usuario
+                </h6>
+                <a class="dropdown-item p-2" href="user.html">
+                  <i class="fas fa-user fa-fw mr-2 text-gray-600"></i>
+                  Perfil de usuario
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                <a class="dropdown-item p-2" href="#">
+                  <i class="fas fa-cogs fa-fw mr-2 text-gray-600"></i>
+                  Configuración de Admin
+                 </a>
+                <a class="dropdown-item p-2 bg-primary text-white" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-white"></i>
+                  Cerrar Sesión
                 </a>
               </div>
             </li>
@@ -346,75 +380,85 @@
               <!-- Page Heading -->
 
               <h1 class="h3 mb-2 text-gray-800">Banner</h1>
-              <p class="mb-4">* Campos Obligatorios</p>
+              <p class="mb-4">Edita el contenido a tu gusto</p>
 
-              <form>
-                <div class="form-group">
-                  <div class="row">
-                    <label class="col-form-label col-sm-10 pt-0 px-0" for="titulo">Título</label>
-                    <div class="col-sm-2">
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label class="form-check-label" for="exampleCheck1">Visible</label>
-                      </div>
+              <!-- Content -->
+
+              <div class="content-preview my-3">
+                <!-- class 'img-left' border-radius -->
+                <div class="card img-left mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" class="card-img" alt="...">
                     </div>
-                    <input type="text" class="form-control" id="" aria-describedby="Titulo" placeholder="Titulo">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <label class="col-form-label col-sm-10 pt-0 px-0" for="titulo">Descripción</label>
-                    <div class="col-sm-2">
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label class="form-check-label" for="exampleCheck1">Visible</label>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Accion</a>
                       </div>
-                    </div>
-                    <input type="text" class="form-control" id="" aria-describedby="Titulo" placeholder="Descripción">
-                  </div>
-                </div>
-                <div class="form-group">
-                    <label class="px-0" for="link">Link</label>
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input">
-                          <label class="form-check-label" for="">Url</label>
-                        </div>
-                      </div>
-                      <div class="col-form-label col-sm-8 pt-0">
-                        <input type="text" class="form-control" id="" aria-describedby="Titulo" placeholder="www.google.com.uy">
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label class="form-check-label" for="">Contenido</label>
-                      </div>
-                    </div>
-                    <div class="col-form-label col-sm-8 pt-0">
-                      <input type="text" class="form-control" id="" aria-describedby="Titulo" placeholder="id?">
-                    </div>
-                </div>
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <label class="col-form-label col-sm-8 pt-0 px-0" for="titulo">Imagen</label>
-                    <div class="col-sm-4">
-                      <span><i class="fas fa-plus-circle"></i> Generar slider</span>
-                    </div>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="validatedCustomFile" required="">
-                      <label class="custom-file-label" for="validatedCustomFile">Selecciona archivo...</label>
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="px-0" for="validationTextarea">Script</label>
-                  <textarea class="form-control" placeholder="" required=""></textarea>
               </div>
-              </form>
+
+              <div class="content-setting">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="customFileLang">Imagen</label>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                            <label class="custom-file-label" for="customFileLang">Selecciona una Imagen</label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Link</label>
+                          <input type="text" class="form-control" id="url-link" placeholder="www...">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="">Texto</label>
+                          <select class="form-control">
+                            <option selected>Si</option>
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Layout</label>
+                          <select class="form-control">
+                            <option selected>Con texto a la Derecha</option>
+                            <option value="1">Con texto a la Derecha</option>
+                            <option value="2">Con texto a la Izquierda</option>
+                            <option value="3">Con texto a Debajo</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>Link en cuerpo</label>
+                          <div class="form-check pt-2">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Incluir link en cuerpo
+                            </label>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Url</label>
+                          <input type="text" class="form-control" id="url-link" placeholder="www...">
+                        </div>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary mb-3 float-right">Guardar</button>
+                </form>
+              </div>
+
+              <!-- Content End -->
+
             </div>
 
             <!-- sidebar -->
@@ -439,8 +483,20 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="date">Publicar</label>
-                    <input type="date" class="form-control" id="date">
+                    <label for="Visibilidad">Visible para:</label>
+                    <select class="form-control" id="Visibilidad">
+                      <option>Grupo1</option>
+                      <option>Grupo2</option>
+                      <option>Grupo3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="date-from">Publicar desde</label>
+                    <input type="date" class="form-control" id="date-from">
+                  </div>
+                  <div class="form-group">
+                    <label for="date-to">Publicar hasta</label>
+                    <input type="date" class="form-control" id="date-to">
                   </div>
                 </form>
               </div>
@@ -450,28 +506,42 @@
                 <form>
                   <div class="form-group">
                     <label for="ubicacion">Home</label>
-                    <select class="form-control" id="ubicacion">
-                      <option>Header</option>
-                      <option>Body</option>
-                      <option>Footer</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="pagina">Página</label>
-                    <select class="form-control" id="pagina">
-                      <option>Nosotros</option>
-                      <option>Contacto</option>
-                    </select>
+                    <!-- <a class="nav-link dropdown-toggle" href="#" id="place-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-folder-open"></i>
+                    </a> -->
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="place-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="icon-circle bg-primary p-3 text-center">
+                        <i class="fas fa-folder-open"></i>
+                      </div>
+                    </a>
+                    <div class="dropdown-list dropdown-menu dropdown-menu-left shadow animated--grow-in" aria-labelledby="alertsDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(29px, 606px, 0px);">
+                      <h6 class="dropdown-header">
+                        Ubicar en:
+                      </h6>
+                      <div class="dropdown-item d-flex align-items-center">
+                      	<select class="form-control">
+                            <option>Diagramación de Pagina1</option>
+                            <option>Diagramación de Pagina2</option>
+                          </select>
+                      </div>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label for="new-page">Nueva página <span><i class="fas fa-plus-circle"></i></span></label>
                     <input type="text" class="form-control" id="new-page" placeholder="/Nosotros...">
                   </div>
+                  <div class="form-group">
+                    <label for="pagina">Página existente</label>
+                    <select class="form-control" id="pagina">
+                      <option>Nosotros</option>
+                      <option>Contacto</option>
+                    </select>
+                  </div>
                 </form>
               </div>
 
-              <div class="mb-4">
-                <h5 class="h5 mb-3 text-gray-800">Autorización y Permisos</h6>
+              <!-- <div class="mb-4">
+                <h5 class="h5 mb-3 text-gray-800">?Autorización y Permisos</h6>
                 <form>
                   <div class="form-group">
                     <label for="grupo-permisos">Grupos</label>
@@ -481,7 +551,7 @@
                     </select>
                   </div>
                 </form>
-              </div>
+              </div> -->
 
               <div class="mb-4">
                 <h5 class="h5 mb-3 text-gray-800">Tags</h6>
@@ -491,11 +561,15 @@
                     <input type="text" class="form-control" id="new-tag" placeholder="Tag">
                   </div>
                 </form>
-                <h6><span class="badge badge-secondary">Tag1</span></h6>
+                <h6 class="d-inline"><span class="badge badge-secondary">Tag1</span></h6>
+                <h6 class="d-inline"><span class="badge badge-secondary">Tag2</span></h6>
+                <h6 class="d-inline"><span class="badge badge-secondary">Tag3</span></h6>
               </div>
 
-              <button type="button" class="btn btn-info btn-block">Preview</button>
-              <button type="button" class="btn btn-primary btn-block">Guardar</button>
+              <button type="button" class="btn btn-light btn-block border">Previsualizar</button>
+              <button type="button" class="btn btn-primary btn-block border">Guardar</button>
+              <button type="button" class="btn btn-info btn-block border">Solicitar Publicación</button>
+
 
             </div>
           </div>

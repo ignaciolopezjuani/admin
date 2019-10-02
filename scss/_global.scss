@@ -59,8 +59,26 @@ a {
   }
 }
 
+// IA Style
+
 // Search section
 
 .filter-form {
   min-width: 320px;
+}
+
+// Select content Layout
+
+.content-select {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 2em;
+  }
+}
+
+
+// Banners - Cards
+
+.img-left .card-img {
+    border-radius: calc(0.35rem - 1px) 0 0 calc(0.35rem - 1px);
 }

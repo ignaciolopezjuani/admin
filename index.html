@@ -31,7 +31,12 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-          <img class="logo" src="http://www.integraamerica.com/contentimg/101/1/v/IAlogo.png">
+          <!-- <img class="logo" src="img/IAlogo.png"> -->
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/IAlogo.png">
+            <source media="(max-width: 768px)" srcset="img/IAlogo-s.png">
+            <img class="logo" src="img/IAlogo.png" alt="IA logo" title="IA">
+          </picture>
       </a>
 
       <!-- Divider -->
@@ -51,9 +56,9 @@
         <div id="create" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Nuevo:</h6>
-            <a class="collapse-item" href="banner.html">Banner</a>
+            <a class="collapse-item" href="banner-select.html">Banner</a>
             <a class="collapse-item" href="#">Link</a>
-            <a class="collapse-item" href="#">Formulario</a>
+            <a class="collapse-item" href="form-select.html">Formulario</a>
             <a class="collapse-item" href="#">Documentos</a>
           </div>
         </div>
