@@ -379,413 +379,97 @@
 
               <!-- Page Heading -->
 
-              <h1 class="h3 mb-2 text-gray-800">Edición de formulario</h1>
-              <p class="mb-4">Crea el contenido a tu gusto</p>
+              <h1 class="h3 mb-2 text-gray-800">Formulario</h1>
+              <p class="mb-4">Edita el contenido a tu gusto</p>
 
               <!-- Content -->
+
+              <div class="preview-content bg-light p-3 my-3">
+                <div class="text-gray-500 text-left mb-3">Previsualaización:</div>
+                <h1 class="h3 mb-2 text-gray-800">Título de formulario</h1>
+                <p class="mb-4">Descripción de formulario</p>
+                <form>
+                  <fieldset disabled  >
+                    <div class="form-group">
+                      <label for="customFileLang">Título de campo</label>
+                      <select class="form-control">
+                        <option selected="">Opción 1</option>
+                        <option value="1">Opción 1</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="customFileLang">Título de campo 2</label>
+                      <select class="form-control">
+                        <option selected="">Opción 1 B</option>
+                        <option value="1">Opción 1 B</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="customFileLang">Título de campo 3</label>
+                      <select class="form-control">
+                        <option selected="">Opción 1 C</option>
+                        <option value="1">Opción 1 C</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn btn-primary my-2" disabled>Enviar</button>
+                </form>
+              </div>
+
               <div class="content-setting">
                 <form>
                   <fieldset>
                     <div class="row">
-                        <div class="form-group col-md-9">
-                          <label for="">Título</label>
-                          <input type="text" class="form-control" id="" placeholder="Contacto">
-                        </div><div class="form-group col-md-3">
-                          <label class="invisible">Incluir título</label>
-                          <div class="form-check pt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="" checked="">
-                            <label class="form-check-label" for="defaultCheck1">Incluir título</label>
+                        <div class="form-group col-md-6">
+                          <label for="customFileLang">Imagen</label>
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                            <label class="custom-file-label" for="customFileLang">Selecciona una Imagen</label>
                           </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Link</label>
+                          <input type="text" class="form-control" id="url-link" placeholder="www...">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-9">
-                          <label for="">Descripción</label>
-                          <input type="text" class="form-control" id="" placeholder="Hablamos?">
-                        </div><div class="form-group col-md-3">
-                          <label class="invisible">Incluir descripción</label>
+                        <div class="form-group col-md-6">
+                          <label for="">Texto</label>
+                          <select class="form-control">
+                            <option selected>Si</option>
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Layout</label>
+                          <select class="form-control">
+                            <option selected>Con texto a la Derecha</option>
+                            <option value="1">Con texto a la Derecha</option>
+                            <option value="2">Con texto a la Izquierda</option>
+                            <option value="3">Con texto a Debajo</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label>Link en cuerpo</label>
                           <div class="form-check pt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="" checked="">
-                            <label class="form-check-label" for="defaultCheck1">Incluir descripción</label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Incluir link en cuerpo
+                            </label>
                           </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Url</label>
+                          <input type="text" class="form-control" id="url-link" placeholder="www...">
                         </div>
                     </div>
                   </fieldset>
-                </form>
-
-                <!-- Drag list-->
-                <!-- <small class="bg-warning">https://jsfiddle.net/djibe89/d2fvqpke/</small> -->
-                <div class="fields-order">
-                  <p class="mt-3">Arrastra y/o edita los campos</p>
-                  <ul class="list-group" id="demo1">
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-                         <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="col-sm-10">
-                          <form>
-                            <div class="form-row align-items-center">
-                              <div class="col-auto">
-                                <label for="inlineFormInput">Nombre del campo</label>
-                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre">
-                              </div>
-                              <div class="col-auto">
-                                <label for="inlineFormInputGroup">Tipo</label>
-                                <select class="form-control">
-                                  <option selected="">Respuesta breve</option>
-                                  <option value="1">Respuesta breve</option>
-                                  <option value="2">Parrafo</option>
-                                  <option value="3">Opción multiple</option>
-                                  <option value="4">Casilla de verificación</option>
-                                  <option value="5">Lista desplegable</option>
-                                  <option value="6">Carga de archivo</option>
-                                  <option value="7">Escala</option>
-                                  <option value="8">Fecha</option>
-                                  <option value="9">Hora</option>
-                                  <option value="10">E-mail</option>
-                                  <option value="11">Numero</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check mt-4">
-                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                  <label class="form-check-label" for="autoSizingCheck">
-                                    Requerido
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-                         <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="col-sm-10">
-                          <form>
-                            <div class="form-row align-items-center">
-                              <div class="col-auto">
-                                <label for="inlineFormInput">Nombre del campo</label>
-                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Mail">
-                              </div>
-                              <div class="col-auto">
-                                <label for="inlineFormInputGroup">Tipo</label>
-                                <select class="form-control">
-                                  <option selected="">E-mail</option>
-                                  <option value="1">Respuesta breve</option>
-                                  <option value="2">Parrafo</option>
-                                  <option value="3">Opción multiple</option>
-                                  <option value="4">Casilla de verificación</option>
-                                  <option value="5">Lista desplegable</option>
-                                  <option value="6">Carga de archivo</option>
-                                  <option value="7">Escala</option>
-                                  <option value="8">Fecha</option>
-                                  <option value="9">Hora</option>
-                                  <option value="10">E-mail</option>
-                                  <option value="11">Numero</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check mt-4">
-                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                  <label class="form-check-label" for="autoSizingCheck">
-                                    Requerido
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-                         <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="col-sm-10">
-                          <form>
-                            <div class="form-row align-items-center">
-                              <div class="col-auto">
-                                <label for="inlineFormInput">Nombre del campo</label>
-                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Teléfono">
-                              </div>
-                              <div class="col-auto">
-                                <label for="inlineFormInputGroup">Tipo</label>
-                                <select class="form-control">
-                                  <option selected="">E-mail</option>
-                                  <option value="1">Respuesta breve</option>
-                                  <option value="2">Parrafo</option>
-                                  <option value="3">Opción multiple</option>
-                                  <option value="4">Casilla de verificación</option>
-                                  <option value="5">Lista desplegable</option>
-                                  <option value="6">Carga de archivo</option>
-                                  <option value="7">Escala</option>
-                                  <option value="8">Fecha</option>
-                                  <option value="9">Hora</option>
-                                  <option value="10">E-mail</option>
-                                  <option value="11">Numero</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check mt-4">
-                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                  <label class="form-check-label" for="autoSizingCheck">
-                                    Requerido
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-                         <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="col-sm-10">
-                          <form>
-                            <div class="form-row align-items-center">
-                              <div class="col-auto">
-                                <label for="inlineFormInput">Nombre del campo</label>
-                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Motivo de Contacto">
-                              </div>
-                              <div class="col-auto">
-                                <label for="inlineFormInputGroup">Tipo</label>
-                                <select class="form-control">
-                                  <option selected="">Opción multiple</option>
-                                  <option value="1">Respuesta breve</option>
-                                  <option value="2">Parrafo</option>
-                                  <option value="3">Opción multiple</option>
-                                  <option value="4">Casilla de verificación</option>
-                                  <option value="5">Lista desplegable</option>
-                                  <option value="6">Carga de archivo</option>
-                                  <option value="7">Escala</option>
-                                  <option value="8">Fecha</option>
-                                  <option value="9">Hora</option>
-                                  <option value="10">E-mail</option>
-                                  <option value="11">Numero</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check">
-                                  <label for="inlineFormInput">Opciones posibles</label>
-                                  <input type="text" class="form-control my-2" id="inlineFormInput" placeholder="Ingresar...">
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check">
-                                  <label for="inlineFormInput">Opciones Ingresadas</label>
-                                  <input type="text" class="form-control my-2" id="inlineFormInput" placeholder="Consulta">
-                                  <input type="text" class="form-control my-2" id="inlineFormInput" placeholder="Solicitud de presupuesto">
-                                  <input type="text" class="form-control my-2" id="inlineFormInput" placeholder="Solicitud de entevista">
-                                </div>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check mt-4">
-                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                  <label class="form-check-label" for="autoSizingCheck">
-                                    Requerido
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="row align-items-center">
-                        <div class="col">
-                         <i class="fas fa-ellipsis-v"></i>
-                        </div>
-                        <div class="col-sm-10">
-                          <form>
-                            <div class="form-row align-items-center">
-                              <div class="col-auto">
-                                <label for="inlineFormInput">Nombre del campo</label>
-                                <input type="text" class="form-control" id="inlineFormInput" placeholder="Mensaje">
-                              </div>
-                              <div class="col-auto">
-                                <label for="inlineFormInputGroup">Tipo</label>
-                                <select class="form-control">
-                                  <option selected="">Parrafo</option>
-                                  <option value="1">Respuesta breve</option>
-                                  <option value="2">Parrafo</option>
-                                  <option value="3">Opción multiple</option>
-                                  <option value="4">Casilla de verificación</option>
-                                  <option value="5">Lista desplegable</option>
-                                  <option value="6">Carga de archivo</option>
-                                  <option value="7">Escala</option>
-                                  <option value="8">Fecha</option>
-                                  <option value="9">Hora</option>
-                                  <option value="10">E-mail</option>
-                                  <option value="11">Numero</option>
-                                </select>
-                              </div>
-                              <div class="col-auto">
-                                <div class="form-check mt-4">
-                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                  <label class="form-check-label" for="autoSizingCheck">
-                                    Requerido
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <form class="my-3 text-center">
-                    <div class="form-group">
-                      <label for="customFileLang">Agregar campos</label>
-                      <button type="button" class="btn" data-toggle="modal" data-target="#new-field">
-                      	<i class="fas fa-plus-circle fa-3x text-primary"></i>
-                      </button>
-                    </div>
-                  <!-- <button type="submit" class="btn btn-primary mb-3 btn-block">Guardar nuevo formulario</button> -->
-                </form>
-
-                <!-- Modal -->
-                <div class="modal fade" id="new-field" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-                  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Nuevo campo</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <fieldset>
-                            <div class="row">
-                                <div class="form-group col-md-3">
-                                  <label for="">Título del campo</label>
-                                  <input type="text" class="form-control" id="" placeholder="Título del campo">
-                                </div>
-                                <div class="form-group col-md-3">
-                                  <label for="customFileLang">Tipo de campo</label>
-                                  <select class="form-control">
-                                    <option selected="">Opción múltiple</option>
-                                    <option value="1">Respuesta breve</option>
-                                    <option value="2">Parrafo</option>
-                                    <option value="3">Opción múltiple</option>
-                                    <option value="4">Casilla de verificación</option>
-                                    <option value="5">Lista desplegable</option>
-                                    <option value="6">Carga de archivo</option>
-                                    <option value="7">Escala lineal</option>
-                                    <option value="8">Fecha</option>
-                                    <option value="9">Hora</option>
-                                  </select>
-                                </div>
-                                <div class="form-group col-md-3">
-                                  <label for="">Agrega opciones</label>
-                                  <input type="text" class="form-control" id="" placeholder="Opción 1">
-                                </div>
-                                <div class="col-md-3 mt-3">
-                                  <div class="form-check mt-4">
-                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                    <label class="form-check-label" for="autoSizingCheck">
-                                      Requerido
-                                    </label>
-                                  </div>
-                              </div>
-                              </div>
-                          </fieldset>
-                      </form>
-                      <div class="preview bg-light p-3">
-                        <div class="text-gray-500 text-left mb-3">Previsualaización:</div>
-                          <div class="form-group">
-                            <label for="customFileLang">Título de campo</label>
-                            <select class="form-control">
-                              <option selected="">Opción 1</option>
-                              <option value="1">Opción 1</option>
-                            </select>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer d-block">
-                      <a href="form-new.html" class="btn btn-primary mb-1 btn-block">Agregar campo</a>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Preview -->
-              <div class="preview-content bg-light p-3 my-3">
-                <div class="text-gray-500 text-left mb-3">Previsualaización:</div>
-                <h1 class="h3 mb-2 text-gray-800">Contacto</h1>
-                <p class="mb-4">Hablamos?</p>
-                <form>
-                  <fieldset>
-                    <div class="form-group">
-                    	<label for="inlineFormInput">Nombre</label>
-                    	<input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                    	<label for="inlineFormInput">E-Mail</label>
-                    	<input type="email" class="form-control" id="inlineFormInput" placeholder="E-Mail">
-                    </div>
-                    <div class="form-group">
-                    	<label for="inlineFormInput">Telefono</label>
-                    	<input type="numer" class="form-control" id="inlineFormInput" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                      <label for="customFileLang">Motivo de contacto</label>
-                      <select class="form-control">
-                        <option selected="">Consulta</option>
-                        <option value="1">Consulta</option>
-                        <option value="2">Solicitud de presupuesto</option>
-                        <option value="3">Solicitud de entrevista</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                    	<label for="exampleFormControlTextarea1">Mensaje</label>
-                    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                  </fieldset>
-                  <button type="submit" class="btn btn-primary my-2" disabled="">Enviar</button>
+                  <button type="submit" class="btn btn-primary mb-3 float-right">Guardar</button>
                 </form>
               </div>
-
-              <!-- Preview end -->
 
               <!-- Content End -->
 
@@ -968,13 +652,6 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-
-  <!-- Drag & drop test -->
-  <script src="https://cdn.jsdelivr.net/gh/RubaXa/Sortable/Sortable.min.js"></script>
-
-  <script>
-  Sortable.create(demo1, { animation: 100, group: 'list-1', draggable: '.list-group-item', handle: '.list-group-item', sort: true, filter: '.sortable-disabled', chosenClass: 'active' });
-  </script>
 
 </body>
 
