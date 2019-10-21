@@ -392,7 +392,7 @@
                     <div class="row">
                         <div class="form-group col-lg-9">
                           <label for="">Título</label>
-                          <input type="text" class="form-control" id="" placeholder="Título de formulario">
+                          <input type="text" class="form-control" id="" placeholder="Título de documento">
                         </div><div class="form-group col-lg-3">
                           <label class="invisible d-md-none d-lg-block">Incluir título</label>
                           <div class="form-check pt-2">
@@ -404,7 +404,7 @@
                     <div class="row">
                         <div class="form-group col-lg-9">
                           <label for="">Descripción</label>
-                          <input type="text" class="form-control" id="" placeholder="Descripción de formulario">
+                          <input type="text" class="form-control" id="" placeholder="Descripción de documento">
                         </div><div class="form-group col-lg-3">
                           <label class="invisible d-md-none d-lg-block">Incluir descripción</label>
                           <div class="form-check pt-2">
@@ -421,11 +421,29 @@
 
               <div>
                 <form method="post" class="summernote">
-                  <textarea id="my-summernote" name="editordata"></textarea>
+                  <textarea id="my-summernote" name="editordata">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt molestie malesuada. Integer in dictum sapien. Duis mattis sem vitae placerat tincidunt. Morbi ultricies justo quis lorem rhoncus pellentesque. Nulla feugiat erat non posuere vestibulum. Curabitur ut eros mi. Morbi dapibus urna commodo, vestibulum erat sit amet, bibendum nunc. Sed pellentesque urna orci, non elementum erat ornare ut. Donec viverra, erat sit amet sollicitudin placerat, tortor metus gravida urna, eget maximus sem dolor at dolor. Donec sagittis leo a nisl blandit tempor.
+
+Nunc consequat sed dui nec volutpat. Sed luctus sapien libero, nec accumsan dui porttitor ac. Ut vitae commodo erat. In vel risus in nibh sollicitudin posuere venenatis at odio. Maecenas et vulputate magna. In eleifend, urna vitae imperdiet pharetra, dui elit bibendum dui, quis luctus nulla massa id erat. Integer magna turpis, aliquam vel rutrum sed, dictum in velit. Mauris vitae sapien vestibulum, tempus felis at, finibus ex. Nulla imperdiet nunc massa, et lacinia enim sodales et. Nulla accumsan scelerisque interdum. Donec imperdiet, felis sit amet blandit eleifend, elit libero porta nunc, vel posuere ipsum justo quis elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed venenatis metus. Pellentesque id lectus vitae arcu consectetur sagittis vel vel risus. In hac habitasse platea dictumst.
+                  </textarea>
                 </form>
               </div>
 
               <!-- Content End -->
+
+              <!-- Preview -->
+
+              <div class="preview-content bg-light p-3 my-3">
+                <div class="text-gray-500 text-left mb-3">Previsualaización:</div>
+                <h1 class="h3 mb-2 text-gray-800">Titulo de documento</h1>
+                <p class="mb-4">Descripción de documento</p>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt molestie malesuada. Integer in dictum sapien. Duis mattis sem vitae placerat tincidunt. Morbi ultricies justo quis lorem rhoncus pellentesque. Nulla feugiat erat non posuere vestibulum. Curabitur ut eros mi. Morbi dapibus urna commodo, vestibulum erat sit amet, bibendum nunc. Sed pellentesque urna orci, non elementum erat ornare ut. Donec viverra, erat sit amet sollicitudin placerat, tortor metus gravida urna, eget maximus sem dolor at dolor. Donec sagittis leo a nisl blandit tempor.
+
+Nunc consequat sed dui nec volutpat. Sed luctus sapien libero, nec accumsan dui porttitor ac. Ut vitae commodo erat. In vel risus in nibh sollicitudin posuere venenatis at odio. Maecenas et vulputate magna. In eleifend, urna vitae imperdiet pharetra, dui elit bibendum dui, quis luctus nulla massa id erat. Integer magna turpis, aliquam vel rutrum sed, dictum in velit. Mauris vitae sapien vestibulum, tempus felis at, finibus ex. Nulla imperdiet nunc massa, et lacinia enim sodales et. Nulla accumsan scelerisque interdum. Donec imperdiet, felis sit amet blandit eleifend, elit libero porta nunc, vel posuere ipsum justo quis elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed venenatis metus. Pellentesque id lectus vitae arcu consectetur sagittis vel vel risus. In hac habitasse platea dictumst.
+                </div>
+              </div>
+
+              <!-- Preview end-->
 
             </div>
 
@@ -534,7 +552,7 @@
                 <h6 class="d-inline"><span class="badge badge-secondary">Tag3</span></h6>
               </div>
 
-              <button type="button" class="btn btn-light btn-block border">Previsualizar</button>
+              <button type="button" class="btn btn-light btn-block border">Previsualizar en sitio</button>
               <button type="button" class="btn btn-primary btn-block border">Guardar</button>
               <button type="button" class="btn btn-info btn-block border">Solicitar Publicación</button>
 

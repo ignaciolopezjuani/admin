@@ -384,27 +384,25 @@
 
               <!-- Content -->
 
-              <div class="content-preview my-3">
-                <!-- class 'img-left' border-radius -->
-                <div class="card img-left mb-3">
-                  <div class="row no-gutters">
-                    <div class="col-md-4">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-primary">Accion</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <div class="content-setting">
                 <form>
                   <fieldset>
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="">Layout</label>
+                        <select class="form-control">
+                          <option selected>Con texto a la Derecha</option>
+                          <option value="1">Solo Imagen</option>
+                          <option value="2">Con texto a la Derecha</option>
+                          <option value="3">Con texto a la Izquierda</option>
+                          <option value="4">Con texto a Debajo</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="">Título</label>
+                        <input type="text" class="form-control" id="" placeholder="Título">
+                      </div>
+                    </div>
                     <div class="row">
                         <div class="form-group col-md-6">
                           <label for="customFileLang">Imagen</label>
@@ -419,42 +417,53 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                           <label for="">Texto</label>
-                          <select class="form-control">
-                            <option selected>Si</option>
-                            <option value="1">Si</option>
-                            <option value="2">No</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="">Layout</label>
-                          <select class="form-control">
-                            <option selected>Con texto a la Derecha</option>
-                            <option value="1">Con texto a la Derecha</option>
-                            <option value="2">Con texto a la Izquierda</option>
-                            <option value="3">Con texto a Debajo</option>
-                          </select>
+                          <textarea class="form-control" id="" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus neque sed metus elementum, non porttitor est rutrum. Phasellus malesuada urna eu turpis mollis luctus." rows="3"></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                           <label>Link en cuerpo</label>
                           <div class="form-check pt-2">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
                             <label class="form-check-label" for="defaultCheck1">
                               Incluir link en cuerpo
                             </label>
                           </div>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
+                          <label for="">Texto del boton</label>
+                          <input type="text" class="form-control" id="" placeholder="Ver más">
+                        </div>
+                        <div class="form-group col-md-4">
                           <label for="">Url</label>
                           <input type="text" class="form-control" id="url-link" placeholder="www...">
                         </div>
                     </div>
                   </fieldset>
-                  <button type="submit" class="btn btn-primary mb-3 float-right">Guardar</button>
+                  <button type="submit" class="btn btn-primary mb-3">Guardar</button>
                 </form>
+              </div>
+
+              <div class="preview-content bg-light p-3 my-3">
+
+                <div class="text-gray-500 text-left mb-3">Previsualaización:</div>
+                <!-- class 'img-left' border-radius -->
+                <div class="card img-left mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus neque sed metus elementum, non porttitor est rutrum. Phasellus malesuada urna eu turpis mollis luctus.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!-- Content End -->
@@ -505,11 +514,11 @@
                 <h5 class="h5 mb-3 text-gray-800">Ubicación</h6>
                 <form>
                   <div class="form-group">
-                    <label for="ubicacion">Home</label>
+                    <!-- <label for="ubicacion">Home</label> -->
                     <!-- <a class="nav-link dropdown-toggle" href="#" id="place-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-folder-open"></i>
                     </a> -->
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="place-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-linkk dropdown-togglee text-white" href="#" id="place-content" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <div class="icon-circle bg-primary p-3 text-center">
                         <i class="fas fa-folder-open"></i>
                       </div>
@@ -566,7 +575,7 @@
                 <h6 class="d-inline"><span class="badge badge-secondary">Tag3</span></h6>
               </div>
 
-              <button type="button" class="btn btn-light btn-block border">Previsualizar</button>
+              <button type="button" class="btn btn-light btn-block border">Previsualizar en sitio</button>
               <button type="button" class="btn btn-primary btn-block border">Guardar</button>
               <button type="button" class="btn btn-info btn-block border">Solicitar Publicación</button>
 
