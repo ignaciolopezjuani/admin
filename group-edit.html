@@ -147,7 +147,7 @@
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content" class="bg-white">
+      <div id="content">
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -379,14 +379,15 @@
 
               <!-- Page Heading -->
 
-              <h1 class="h3 mb-2 text-gray-800">Datos de Usuario</h1>
+              <h1 class="h3 mb-2 text-gray-800">Datos de Grupo</h1>
+              <p>Lista de usuarios, permisos, etc etc</p>
 
               <form>
               <fieldset>
                 <div class="row">
                     <div class="form-group col-md-6">
                       <label for="inputEmail4">Usuario</label>
-                      <input type="text" class="form-control" id="" placeholder="Valerie_Luna" disabled>
+                      <input type="text" class="form-control" id="" placeholder="Valerie_Luna" disabled="">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputPassword4">Mail</label>
@@ -405,21 +406,6 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6">
-                      <label for="customFileLang">Imagen de usuario</label>
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-                        <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
-                      </div>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputPassword4">Previsualización de imagen</label>
-                      <div class="text-center">
-                            <img src="https://via.placeholder.com/200" class="rounded img-fluid img-thumbnail" alt="...">
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6">
                       <label for="pass-input">Contraseña</label>
                       <input type="password" class="form-control" id="pass-input" placeholder="Contraseña">
                       <small id="passwordHelpBlock" class="form-text text-muted">
@@ -434,6 +420,53 @@
                       </small>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="">Estado</label>
+                      <form>
+                        <select class="form-control" id="">
+                          <option>Valido</option>
+                          <option>Rechazado</option>
+                          <option>Pendiente de aprovación</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="">Grupo</label>
+                      <form>
+                        <select class="form-control" id="">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </form>
+                    </div>
+                </div>
+                <button class="btn mb-3 px-0" type="button" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="collapseExample">Configuración avanzada</button>
+                <div class="collapse mb-2" id="advanced-settings">
+                  <div class="card card-body">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
+                            <label class="form-check-label" for="">
+                              Usuario activo (Crea contenidos)
+                            </label>
+                          </div>
+                          <small>Puede crear contenidos desde el sitio web (si esta disponible)</small>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
+                            <label class="form-check-label" for="">
+                              Usa cosola de administración
+                            </label>
+                          </div>
+                          <small>Puede usar la consola según permisos</small>
+                        </div>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <button type="submit" class="btn btn-primary mb-3">Guardar</button>
             </form>
@@ -445,67 +478,65 @@
           <!-- /.row -->
 
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
+
+        <!-- End of Footer -->
 
       </div>
-      <!-- End of Main Content -->
+      <!-- End of Content Wrapper -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white border-top">
+      <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Your Website 2019</span>
           </div>
         </div>
       </footer>
-      <!-- End of Footer -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Page Wrapper -->
 
-  </div>
-  <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 

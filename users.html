@@ -27,24 +27,53 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <div class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-text mx-3">
-          <img class="logo" src="http://bigbag.integraamerica.com/admin/images/qportal.gif">
-        </div>
+          <img class="logo" src="http://www.integraamerica.com/contentimg/101/1/v/IAlogo.png">
       </a>
 
       <!-- Divider -->
-      <!-- <hr class="sidebar-divider my-0"> -->
+      <hr class="sidebar-divider">
 
-      <!-- Nav Item - Dashboard -->
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li> -->
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Contenidos
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <div class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#create" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-plus-circle"></i>
+          <span>Crear</span>
+        </a>
+        <div id="create" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Nuevo:</h6>
+            <a class="collapse-item" href="banner.html">Banner</a>
+            <a class="collapse-item" href="#">Link</a>
+            <a class="collapse-item" href="#">Formulario</a>
+            <a class="collapse-item" href="#">Documentos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav Item - Paginas -->
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Paginas</span>
+        </a>
+      </div>
+
+      <!-- Nav Item - Estructura de contenidos -->
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-folder-open"></i>
+          <span>Estructura de contenidos</span>
+        </a>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -55,147 +84,53 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <div class="nav-item">
+        <a class="nav-link" href="users.html">
           <i class="fas fa-fw fa-users"></i>
           <span>Usuarios y Grupos</span></a>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-fw fa-users"></i>
-          <span>Grupos</span></a>
-      </li> -->
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Crear contenidos
+        Apariencia
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-plus-circle"></i>
-          <span>Crear</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Nuevo:</h6>
-            <a class="collapse-item" href="#">Acceso Directo</a>
-            <a class="collapse-item" href="#">Banner</a>
-            <a class="collapse-item" href="#">Banner Random</a>
-            <a class="collapse-item" href="#">Banner Script</a>
-            <a class="collapse-item" href="#">Banner Slider</a>
-            <a class="collapse-item" href="#">Carousel Slider</a>
-            <a class="collapse-item" href="#">Contenedor</a>
-            <a class="collapse-item" href="#">Contenedor en pesta馻s</a>
-            <a class="collapse-item" href="#">Contenido compuesto</a>
-            <a class="collapse-item" href="#">Diagramaci髇 de p醙ina</a>
-            <a class="collapse-item" href="#">Documento</a>
-            <a class="collapse-item" href="#">Download</a>
-            <a class="collapse-item" href="#">Encuesta</a>
-            <a class="collapse-item" href="#">Enlace (Link)</a>
-            <a class="collapse-item" href="#">Evaluaci髇</a>
-            <a class="collapse-item" href="#">Feature</a>
-            <a class="collapse-item" href="#">Formulario</a>
-            <a class="collapse-item" href="#">Galer韆 de fotos</a>
-            <a class="collapse-item" href="#">Hero Video</a>
-            <a class="collapse-item" href="#">Marca</a>
-            <a class="collapse-item" href="#">NewsLetter</a>
-            <a class="collapse-item" href="#">NL Address Book</a>
-            <a class="collapse-item" href="#">Preguntas Frecuentes</a>
-            <a class="collapse-item" href="#">Producto</a>
-            <a class="collapse-item" href="#">Recurso APP</a>
-            <a class="collapse-item" href="#">Recurso HTM</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Herramientas y Configuraci髇
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <div class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#theme" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
+          <span>Apariencia</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="theme" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
+            <a class="collapse-item" href="#">Apariencia general</a>
+            <h6 class="collapse-header">Home:</h6>
+            <a class="collapse-item" href="#">Header / Cabezal</a>
+            <a class="collapse-item" href="#">Body / Cuerpo</a>
+            <a class="collapse-item" href="#">Footer / Pie</a>
+            <h6 class="collapse-header">Contenidos</h6>
+            <a class="collapse-item" href="#">Body / Cuerpo</a>
           </div>
         </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
-      </li>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Addons
+        Configuraci贸n
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
+      <!-- Nav Item - Herramientas -->
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>Herramientas</span></a>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -205,7 +140,7 @@
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
-    </ul>
+    </div>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -225,15 +160,51 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-2 ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-1 small search-assist-trigger" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-primary to-results" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>
             </div>
           </form>
-          <a href="#"> Busqueda avanzada</a>
+          <!-- Search assist -->
+          <div class="dropdown-menu dropdown search-assist-cont" x-placement="bottom-start" style="padding: 0;max-width: 300px;position: absolute;will-change: transform;top: 0px;left: 0px;transform: translate3d(200px, 75px, 0px);border: none;">
+	            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in show" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header text-uppercase font-weight-bold">Asistente de b煤squeda</h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span>palabra buscada</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-fw fa-folder text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>buscada</div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-secondary">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>Palabra buscada</div>
+                </a>
+                <h6 class="dropdown-header text-center text-uppercase font-weight-bold"><a class="dropdown-items text-white" href="#">Mostrar todos los resultados</a></h6>
+              </div>
+          </div>
+          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">B煤squeda avanzada</a></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -255,15 +226,16 @@
                     </div>
                   </div>
                 </form>
+                <div class="text-xs font-weight-bold text-primary text-uppercase mt-3"><a href="#"> Busqueda avanzada</a></div>
               </div>
             </li>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw fa-2x"></i>
+                <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
+                <span class="badge badge-danger badge-counter">3</span>
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
@@ -272,18 +244,18 @@
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-primary">
+                    <div class="icon-circle bg-danger">
                       <i class="fas fa-file-alt text-white"></i>
                     </div>
                   </div>
                   <div>
                     <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">Publicaci髇 pendiente</span>
+                    Publicaci贸n pendiente
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-success">
+                    <div class="icon-circle bg-warning">
                       <i class="fas fa-donate text-white"></i>
                     </div>
                   </div>
@@ -294,21 +266,21 @@
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-warning">
+                    <div class="icon-circle bg-success">
                       <i class="fas fa-exclamation-triangle text-white"></i>
                     </div>
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Revisi髇 pendiente
+                    Revisi贸n pendiente
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                <a class="dropdown-item text-center small dropdown-header text-white" href="notifications.html">Mostrar todas las alertas</a>
               </div>
             </li>
 
             <!-- Nav Item - Messages -->
-            <!-- <li class="nav-item dropdown no-arrow mx-1">
+            <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-envelope fa-fw"></i>
 
@@ -322,7 +294,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
+                    <!-- <div class="status-indicator bg-success"></div> -->
                   </div>
                   <div class="font-weight-bold">
                     <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
@@ -332,7 +304,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                    <div class="status-indicator"></div>
+                    <!-- <div class="status-indicator"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
@@ -342,7 +314,7 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                    <div class="status-indicator bg-warning"></div>
+                    <!-- <div class="status-indicator bg-warning"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
@@ -352,16 +324,16 @@
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
                     <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
+                    <!-- <div class="status-indicator bg-success"></div> -->
                   </div>
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog 路 2w</div>
                   </div>
                 </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                <a class="dropdown-item text-center small dropdown-header text-white" href="#">Read More Messages</a>
               </div>
-            </li> -->
+            </li>
 
             <!-- <div class="topbar-divider d-none d-sm-block"></div> -->
 
@@ -372,23 +344,21 @@
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in p-0 mt-1" aria-labelledby="userDropdown">
+                <h6 class="dropdown-item dropdown-header p-2 bg-primary text-white">
+                  Configuraci贸n de usuario
+                </h6>
+                <a class="dropdown-item p-2" href="user.html">
+                  <i class="fas fa-user fa-fw mr-2 text-gray-600"></i>
+                  Perfil de usuario
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                <!-- <a class="dropdown-item p-2" href="#">
+                  <i class="fas fa-cogs fa-fw mr-2 text-gray-600"></i>
+                  Configuraci贸n de Admin
+                 </a> -->
+                <a class="dropdown-item p-2 bg-primary text-white" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-white"></i>
+                  Cerrar Sesi贸n
                 </a>
               </div>
             </li>
@@ -407,134 +377,278 @@
           </div>
 
           <!-- Content Row -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <h5 class="d-inline card-title">Usuarios</h5>
-                  <a title="Agegar nuevo" class="text-primary float-right"><i class="fas fa-plus-circle fa-2x"></i></a>
-                </div>
-                <table class="table table-striped table-hover">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Grupo</th>
-                      <th>Editar</th>
-                      <th>Eliminar</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                      </td>
-                      <td>
-                        <form>
-                          <div class="form-group">
-                            <label class="d-none" for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                        </form>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                      </td>
-                      <td>
-                        <form>
-                          <div class="form-group">
-                            <label class="d-none" for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                        </form>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                      </td>
-                      <td>
-                        <form>
-                          <div class="form-group">
-                            <label class="d-none" for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                        </form>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
 
-          <!-- Content Row -->
-          <div class="row">
+          <!-- Groups -->
+
+          <div class="row" id="group-list">
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
                   <h5 class="d-inline card-title">Grupos</h5>
                   <a title="Agegar nuevo" class="text-primary float-right"><i class="fas fa-plus-circle fa-2x"></i></a>
                 </div>
-                <table class="table table-striped table-hover">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Editar</th>
-                      <th>Eliminar</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <a class="text-primary">Grupo1</a>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a class="text-primary">Grupo2</a>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a class="text-primary">Grupo3</a>
-                      </td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-pencil-alt"></i></a></td>
-                      <td><a class="text-primary" href="#"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length" id="dataTable_length">
+                            <label>Show
+                                <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select> entries</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div id="dataTable_filter" class="dataTables_filter">
+                            <label>Search:
+                                <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table class="table table-bordered table-striped table-hover m-0">
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="group-edit.html" class="text-primary">Grupo1</a>
+                            </td>
+                            <td><a href="group-edit.html" class="btn text-primary"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-group-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="group-edit.html" class="text-primary">Grupo2</a>
+                            </td>
+                            <td><a href="group-edit.html" class="btn text-primary"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-group-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="group-edit.html" class="text-primary">Grupo3</a>
+                            </td>
+                            <td><a href="group-edit.html" class="btn text-primary"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-group-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                          <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                          <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Delete Group modal -->
+            <div class="modal fade" id="delete-group-confirmation" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Desea eliminar grupo "xxxxxx"?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">脳</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-left">Elimiar谩s el grupo y su configuraci贸n de acceso y permisos para los usarios que lo integran.</div>
+                  <div class="text-left">Los usuarios asociados a este grupo NO ser谩n eliminados.</div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          <!-- Content Row -->
+
+          <!-- Users -->
+          <div class="row" id="user-list">
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <h5 class="d-inline card-title">Usuarios</h5>
+                  <a title="Agegar nuevo" class="text-primary float-right"><i class="fas fa-plus-circle fa-2x"></i></a>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="dataTables_length" id="dataTable_length">
+                            <label>Show
+                                <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select> entries</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div id="dataTable_filter" class="dataTables_filter">
+                            <label>Search:
+                                <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                      <table class="table table-bordered table-striped table-hover m-0">
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Grupo</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
+                            </td>
+                            <td>
+                              <form>
+                                <div class="form-group">
+                                  <label class="d-none" for="exampleFormControlSelect1">Example select</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </td>
+                            <td><a class="btn text-primary" href="users-edit.html"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-user-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
+                            </td>
+                            <td>
+                              <form>
+                                <div class="form-group">
+                                  <label class="d-none" for="exampleFormControlSelect1">Example select</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </td>
+                            <td><a class="btn text-primary" href="users-edit.html"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-user-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
+                            </td>
+                            <td>
+                              <form>
+                                <div class="form-group">
+                                  <label class="d-none" for="exampleFormControlSelect1">Example select</label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </form>
+                            </td>
+                            <td><a class="btn text-primary" href="users-edit.html"><i class="fas fa-pencil-alt"></i></a></td>
+                            <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-user-confirmation"><i class="fas fa-trash-alt"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                        <ul class="pagination">
+                          <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
+                          <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                          <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                          <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delete user modal-->
+            <div class="modal fade" id="delete-user-confirmation" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Desea eliminar usuario "xxxxxx"?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">脳</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="text-left">Cancelar谩s el acceso y permisos de dicho usario</div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           </div>
 
         </div>
