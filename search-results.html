@@ -31,7 +31,12 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-          <img class="logo" src="http://www.integraamerica.com/contentimg/101/1/v/IAlogo.png">
+        <!-- <img class="logo" src="img/IAlogo.png"> -->
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/IAlogo.png">
+          <source media="(max-width: 768px)" srcset="img/IAlogo-s.png">
+          <img class="logo" src="img/IAlogo.png" alt="IA logo" title="IA">
+        </picture>
       </a>
 
       <!-- Divider -->
@@ -51,27 +56,19 @@
         <div id="create" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Nuevo:</h6>
-            <a class="collapse-item" href="banner.html">Banner</a>
+            <a class="collapse-item" href="banner-select.html">Banner</a>
             <a class="collapse-item" href="#">Link</a>
-            <a class="collapse-item" href="#">Formulario</a>
-            <a class="collapse-item" href="#">Documentos</a>
+            <a class="collapse-item" href="form-select.html">Formulario</a>
+            <a class="collapse-item" href="document-select.html">Documentos</a>
           </div>
         </div>
       </div>
 
       <!-- Nav Item - Paginas -->
       <div class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="pages.html">
           <i class="fas fa-fw fa-folder"></i>
           <span>Paginas</span>
-        </a>
-      </div>
-
-      <!-- Nav Item - Estructura de contenidos -->
-      <div class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-folder-open"></i>
-          <span>Estructura de contenidos</span>
         </a>
       </div>
 
@@ -80,14 +77,14 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Usuarios y Grupos
+        Usuarios, Grupos y Perfiles
       </div>
 
       <!-- Nav Item - Charts -->
       <div class="nav-item">
         <a class="nav-link" href="users.html">
           <i class="fas fa-fw fa-users"></i>
-          <span>Usuarios y Grupos</span></a>
+          <span>Usuarios, Grupos y Perfiles</span></a>
       </div>
 
       <!-- Divider -->
@@ -106,7 +103,8 @@
         </a>
         <div id="theme" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Apariencia general</a>
+            <a class="collapse-item" href="themes.html">Temas</a>
+            <a class="collapse-item" href="appearance-general.html">Apariencia general</a>
             <h6 class="collapse-header">Home:</h6>
             <a class="collapse-item" href="#">Header / Cabezal</a>
             <a class="collapse-item" href="#">Body / Cuerpo</a>
@@ -122,7 +120,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Configuración
+        ConfiguraciÃ³n
       </div>
 
       <!-- Nav Item - Herramientas -->
@@ -214,7 +212,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">Publicaci�n pendiente</span>
+                    <span class="font-weight-bold">Publicaciï¿½n pendiente</span>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -236,7 +234,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Revisi�n pendiente
+                    Revisiï¿½n pendiente
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -262,7 +260,7 @@
                   </div>
                   <div class="font-weight-bold">
                     <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    <div class="small text-gray-500">Emily Fowler Â· 58m</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -272,7 +270,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                    <div class="small text-gray-500">Jae Chun Â· 1d</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -282,7 +280,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    <div class="small text-gray-500">Morgan Alvarez Â· 2d</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -292,7 +290,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    <div class="small text-gray-500">Chicken the Dog Â· 2w</div>
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
@@ -339,7 +337,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Resultados de Búsqueda</h1>
+            <h1 class="h3 mb-0 text-gray-800">Resultados de BÃºsqueda</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
@@ -352,7 +350,7 @@
 
           	<div class="col-xs-12 col-md-auto">
           		<div class="bg-light rounded side">
-          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu" aria-expanded="false">Filtrar según Categorías</a>
+          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu" aria-expanded="false">Filtrar segÃºn CategorÃ­as</a>
 
           			<div class="d-md-block pb-3 collapse" id="searchresults-menu" aria-expanded="true" style="">
                   <!-- Card with Header - Dropdown -->
@@ -404,7 +402,7 @@
           		</div>
 
               <div class="bg-light rounded side">
-          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu2" aria-expanded="false">Filtrar según Precio</a>
+          			<a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu2" aria-expanded="false">Filtrar segÃºn Precio</a>
 
           			<div class="d-md-block pb-3 collapse" id="searchresults-menu2" aria-expanded="true" style="">
 
@@ -432,7 +430,7 @@
                   </div>
 
                   <div class="bg-light rounded side">
-                    <a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu3" aria-expanded="false">Filtrar según Marca</a>
+                    <a class="d-md-none px-3 py-2 my-2 d-block menu-toggle text-primary position-relative collapsed" href="#" data-toggle="collapse" data-target="#searchresults-menu3" aria-expanded="false">Filtrar segÃºn Marca</a>
 
                     <div class="d-md-block pb-3 collapse" id="searchresults-menu3" aria-expanded="true" style="">
 
@@ -630,7 +628,7 @@
                           <ul class="pagination justify-content-center">
 
                               <li class="page-item page-prev disabled">
-                                <span class="page-link" aria-label="Anterior"><span aria-hidden="true">«</span></span>
+                                <span class="page-link" aria-label="Anterior"><span aria-hidden="true">Â«</span></span>
                               </li>
                               <li class="page-item page page-start active">
                                   <a class="page-link" href="#">1</a>
@@ -649,7 +647,7 @@
                               </li>
                               <li class="page-item page-next page">
                                 <a class="page-link" aria-label="Siguiente" href="#">
-                                  <span aria-hidden="true">»</span>
+                                  <span aria-hidden="true">Â»</span>
                                 </a>
                               </li>
                             </ul>
@@ -703,7 +701,7 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true">Ã</span>
           </button>
         </div>
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>

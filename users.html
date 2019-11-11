@@ -31,7 +31,12 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-          <img class="logo" src="http://www.integraamerica.com/contentimg/101/1/v/IAlogo.png">
+        <!-- <img class="logo" src="img/IAlogo.png"> -->
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/IAlogo.png">
+          <source media="(max-width: 768px)" srcset="img/IAlogo-s.png">
+          <img class="logo" src="img/IAlogo.png" alt="IA logo" title="IA">
+        </picture>
       </a>
 
       <!-- Divider -->
@@ -51,27 +56,19 @@
         <div id="create" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Nuevo:</h6>
-            <a class="collapse-item" href="banner.html">Banner</a>
+            <a class="collapse-item" href="banner-select.html">Banner</a>
             <a class="collapse-item" href="#">Link</a>
-            <a class="collapse-item" href="#">Formulario</a>
-            <a class="collapse-item" href="#">Documentos</a>
+            <a class="collapse-item" href="form-select.html">Formulario</a>
+            <a class="collapse-item" href="document-select.html">Documentos</a>
           </div>
         </div>
       </div>
 
       <!-- Nav Item - Paginas -->
       <div class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="pages.html">
           <i class="fas fa-fw fa-folder"></i>
           <span>Paginas</span>
-        </a>
-      </div>
-
-      <!-- Nav Item - Estructura de contenidos -->
-      <div class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-folder-open"></i>
-          <span>Estructura de contenidos</span>
         </a>
       </div>
 
@@ -80,14 +77,14 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Usuarios y Grupos
+        Usuarios, Grupos y Perfiles
       </div>
 
       <!-- Nav Item - Charts -->
       <div class="nav-item">
         <a class="nav-link" href="users.html">
           <i class="fas fa-fw fa-users"></i>
-          <span>Usuarios y Grupos</span></a>
+          <span>Usuarios, Grupos y Perfiles</span></a>
       </div>
 
       <!-- Divider -->
@@ -106,7 +103,8 @@
         </a>
         <div id="theme" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Apariencia general</a>
+            <a class="collapse-item" href="themes.html">Temas</a>
+            <a class="collapse-item" href="appearance-general.html">Apariencia general</a>
             <h6 class="collapse-header">Home:</h6>
             <a class="collapse-item" href="#">Header / Cabezal</a>
             <a class="collapse-item" href="#">Body / Cuerpo</a>
@@ -122,7 +120,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Configuración
+        ConfiguraciÃ³n
       </div>
 
       <!-- Nav Item - Herramientas -->
@@ -204,7 +202,7 @@
                 <h6 class="dropdown-header text-center text-uppercase font-weight-bold"><a class="dropdown-items text-white" href="#">Mostrar todos los resultados</a></h6>
               </div>
           </div>
-          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">Búsqueda avanzada</a></div>
+          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">BÃºsqueda avanzada</a></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -250,7 +248,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 12, 2019</div>
-                    Publicación pendiente
+                    PublicaciÃ³n pendiente
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -272,7 +270,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Revisión pendiente
+                    RevisiÃ³n pendiente
                   </div>
                 </a>
                 <a class="dropdown-item text-center small dropdown-header text-white" href="notifications.html">Mostrar todas las alertas</a>
@@ -298,7 +296,7 @@
                   </div>
                   <div class="font-weight-bold">
                     <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    <div class="small text-gray-500">Emily Fowler Â· 58m</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -308,7 +306,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                    <div class="small text-gray-500">Jae Chun Â· 1d</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -318,7 +316,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    <div class="small text-gray-500">Morgan Alvarez Â· 2d</div>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -328,7 +326,7 @@
                   </div>
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    <div class="small text-gray-500">Chicken the Dog Â· 2w</div>
                   </div>
                 </a>
                 <a class="dropdown-item text-center small dropdown-header text-white" href="#">Read More Messages</a>
@@ -354,7 +352,7 @@
                 </a>
                 <!-- <a class="dropdown-item p-2" href="#">
                   <i class="fas fa-cogs fa-fw mr-2 text-gray-600"></i>
-                  Configuración de Admin
+                  ConfiguraciÃ³n de Admin
                  </a> -->
                 <a class="dropdown-item p-2 bg-primary text-white" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-white"></i>
@@ -373,7 +371,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Usuarios y Grupos</h1>
+            <h1 class="h3 mb-0 text-gray-800">Usuarios, Grupos y Perfiles</h1>
           </div>
 
           <!-- Content Row -->
@@ -492,12 +490,12 @@
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Desea eliminar grupo "xxxxxx"?</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">x</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="text-left">Elimiarás el grupo y su configuración de acceso y permisos para los usarios que lo integran.</div>
-                  <div class="text-left">Los usuarios asociados a este grupo NO serán eliminados.</div>
+                  <div class="text-left">ElimiarÃ¡s el grupo y su configuraciÃ³n de acceso y permisos para los usarios que lo integran.</div>
+                  <div class="text-left">Los usuarios asociados a este grupo NO serÃ¡n eliminados.</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger">Eliminar</button>
@@ -514,7 +512,7 @@
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Crear nuevo grupo</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
+                  <span aria-hidden="true">x</span>
                 </button>
               </div>
               <div class="modal-body">
@@ -890,11 +888,11 @@
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Desea eliminar usuario "xxxxxx"?</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">x</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="text-left">Cancelarás el acceso y permisos de dicho usario</div>
+                  <div class="text-left">CancelarÃ¡s el acceso y permisos de dicho usario</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger">Eliminar</button>
@@ -911,7 +909,7 @@
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Crear nuevo usuario</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
+                  <span aria-hidden="true">x</span>
                 </button>
               </div>
               <div class="modal-body">
@@ -941,17 +939,17 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6">
-                                          <label for="pass-input">Contraseña</label>
-                                          <input type="password" class="form-control" id="pass-input" placeholder="Contraseña">
+                                          <label for="pass-input">ContraseÃ±a</label>
+                                          <input type="password" class="form-control" id="pass-input" placeholder="ContraseÃ±a">
                                           <small id="passwordHelpBlock" class="form-text text-muted">
-                                            Tu contraseña debe tener de 8-20 a caracteres con letras y numeros, no puede contener espacios ni caracteres especiales.
+                                            Tu contraseÃ±a debe tener de 8-20 a caracteres con letras y numeros, no puede contener espacios ni caracteres especiales.
                                           </small>
                                         </div>
                                         <div class="form-group col-md-6">
-                                          <label for="repeat-pass-input">Repetir Contraseña</label>
-                                          <input type="password" class="form-control" id="repeat-pass-input" placeholder="Repetir contraseña">
+                                          <label for="repeat-pass-input">Repetir ContraseÃ±a</label>
+                                          <input type="password" class="form-control" id="repeat-pass-input" placeholder="Repetir contraseÃ±a">
                                           <small id="passwordHelpBlock" class="form-text text-muted">
-                                            Tu contraseña debe coincidir
+                                            Tu contraseÃ±a debe coincidir
                                           </small>
                                         </div>
                                     </div>
@@ -962,7 +960,7 @@
                                             <select class="form-control" id="">
                                               <option>Valido</option>
                                               <option>Rechazado</option>
-                                              <option>Pendiente de aprovación</option>
+                                              <option>Pendiente de aprovaciÃ³n</option>
                                             </select>
 
                                         </div>
@@ -977,7 +975,7 @@
                                           </form>
                                         </div>
                                     </div>
-                                    <button class="btn mb-3 px-0" type="button" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="collapseExample">Configuración avanzada</button>
+                                    <button class="btn mb-3 px-0" type="button" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="collapseExample">ConfiguraciÃ³n avanzada</button>
                                     <div class="collapse mb-2" id="advanced-settings">
                                       <div class="card card-body">
                                         <div class="row">
@@ -994,10 +992,10 @@
                                               <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
                                                 <label class="form-check-label" for="">
-                                                  Usa cosola de administración
+                                                  Usa cosola de administraciÃ³n
                                                 </label>
                                               </div>
-                                              <small>Puede usar la consola según permisos</small>
+                                              <small>Puede usar la consola segÃºn permisos</small>
                                             </div>
                                         </div>
                                       </div>
@@ -1047,7 +1045,7 @@
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
+              <span aria-hidden="true">x</span>
             </button>
           </div>
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
