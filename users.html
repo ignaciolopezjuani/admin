@@ -120,7 +120,7 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        ConfiguraciÃÂ³n
+        Configuración
       </div>
 
       <!-- Nav Item - Herramientas -->
@@ -169,7 +169,7 @@
           <!-- Search assist -->
           <div class="dropdown-menu dropdown search-assist-cont" x-placement="bottom-start" style="padding: 0;max-width: 300px;position: absolute;will-change: transform;top: 0px;left: 0px;transform: translate3d(200px, 75px, 0px);border: none;">
 	            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in show" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header text-uppercase font-weight-bold">Asistente de bÃºsqueda</h6>
+                <h6 class="dropdown-header text-uppercase font-weight-bold">Asistente de búsqueda</h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
                     <div class="icon-circle bg-secondary">
@@ -248,7 +248,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 12, 2019</div>
-                    PublicaciÃÂ³n pendiente
+                    Publicación pendiente
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -270,7 +270,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    RevisiÃÂ³n pendiente
+                    Revisión pendiente
                   </div>
                 </a>
                 <a class="dropdown-item text-center small dropdown-header text-white" href="notifications.html">Mostrar todas las alertas</a>
@@ -344,7 +344,7 @@
               <!-- Dropdown - User Information -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in p-0 mt-1" aria-labelledby="userDropdown">
                 <h6 class="dropdown-item dropdown-header p-2 bg-primary text-white">
-                  ConfiguraciÃ³n de usuario
+                  Configuración de usuario
                 </h6>
                 <a class="dropdown-item p-2" href="user.html">
                   <i class="fas fa-user fa-fw mr-2 text-gray-600"></i>
@@ -352,7 +352,7 @@
                 </a>
                 <!-- <a class="dropdown-item p-2" href="#">
                   <i class="fas fa-cogs fa-fw mr-2 text-gray-600"></i>
-                  ConfiguraciÃÂ³n de Admin
+                  Configuración de Admin
                  </a> -->
                 <a class="dropdown-item p-2 bg-primary text-white" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-white"></i>
@@ -401,46 +401,191 @@
                         <tbody>
                           <tr>
                             <td>
-                              <a href="group-edit.html" class="text-primary">Aministrador <i class="fas fa-pencil-alt"></i></a>
+                              <a href="profile-edit.html" class="text-primary">Aministrador <i class="fas fa-pencil-alt ml-2"></i></a>
                             </td>
                             <td>
-                              <ul class="list-group">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                              <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        Diseño y diagramación de página
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Gestión de usuarios
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Creación de contenidos
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Acceso a contenidos en ambito "privado"
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </td>
                             <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-profile-confirmation"><i class="fas fa-trash-alt"></i></button></td>
                           </tr>
                           <tr>
                             <td>
-                              <a href="group-edit.html" class="text-primary">Creador<i class="fas fa-pencil-alt"></i></a>
+                              <a href="profile-edit.html" class="text-primary">Creador<i class="fas fa-pencil-alt ml-2"></i></a>
                             </td>
                             <td>
-                              <ul class="list-group">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                              <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Gestión de usuarios
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Creación de contenidos
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_Two" aria-expanded="false" aria-controls="collapse_Two">
+                                        Acceso a contenidos en ambito "privado"
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse_Two" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </td>
                             <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-profile-confirmation"><i class="fas fa-trash-alt"></i></button></td>
                           </tr>
                           <tr>
                             <td>
-                              <a href="group-edit.html" class="text-primary">Usuario final<i class="fas fa-pencil-alt"></i></a>
+                              <a href="profile-edit.html" class="text-primary">Usuario final<i class="fas fa-pencil-alt ml-2"></i></a>
                             </td>
                             <td>
-                              <ul class="list-group">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                              </ul>
+                              <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse_Three" aria-expanded="false" aria-controls="collapse_Three">
+                                        Acceso a contenidos en ambito "privado"
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse_Three" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Morbi leo risus</li>
+                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </td>
                             <td><button type="button" class="btn text-danger" data-toggle="modal" data-target="#delete-profile-confirmation"><i class="fas fa-trash-alt"></i></button></td>
                           </tr>
@@ -451,9 +596,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="row">
-
-                    <div class="small">Los perfiles de usuarios estan definidos según permisos y posibilidades de creacíon y/o edición de contenidos
-                    </div>
+                    <div class="small">Los perfiles de usuarios estan definidos según permisos y posibilidades de creación y/o edición de contenidos</div>
                   </div>
                 </div>
               </div>
@@ -470,8 +613,9 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="text-left">ElimiarÃ¡s el grupo y su configuraciÃ³n de acceso y permisos para los usarios que lo integran.</div>
-                  <div class="text-left">Los usuarios asociados a este grupo NO serÃ¡n eliminados.</div>
+                  <div class="text-left">Eliminarás el perfil.</div>
+                  <div class="text-left">los grupos y usuarios asociados a este perfil perderán sus permisos y accesos asociados a ese perfil.</div>
+                  <div class="text-left">Los usuarios y grupos asociados a este perfil NO serán eliminados.</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger">Eliminar</button>
@@ -494,176 +638,312 @@
               </div>
               <div class="modal-body">
                 <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="group-name">Nombre del grupo</label>
-                        <input type="text" class="form-control" id="group-name" placeholder="Grupo">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="group-name">Perfil del grupo</label>
-                        <select class="form-control" id="">
-                          <option>Usuario final</option>
-                          <option>Creador de contenido</option>
-                          <option>Administrador</option>
-                          <option>Super-Administrador</option>
-                        </select>
+                      <div class="form-group col-md-12">
+                        <label for="group-name">Nombre del perfil</label>
+                        <input type="text" class="form-control" id="group-name" placeholder="Ej. Marketing">
                       </div>
                   </div>
-                <div class="row" id="user-list">
+                <div class="row" id="">
                   <div class="col-12">
                     <div class="card mb-4">
                       <div class="card-header">
-                        <h5 class="d-inline card-title">Agrega usuarios al nuevo grupo</h5>
+                        <h5 class="d-inline card-title">Configura permisos y accesos</h5>
                       </div>
                       <div class="card-body">
-                        <!-- <div class="row">
-                          <div class="col-sm-12 col-md-6">
-                              <div class="dataTables_length" id="dataTable_length">
-                                  <label>Show
-                                      <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
-                                          <option value="10">10</option>
-                                          <option value="25">25</option>
-                                          <option value="50">50</option>
-                                          <option value="100">100</option>
-                                      </select> entries</label>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                  <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1a" aria-expanded="true" aria-controls="collapse-1a">
+                                        Diseño y diagramación de página
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse-1a" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2b" aria-expanded="false" aria-controls="collapse2b">
+                                        Gestión de usuarios
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse2b" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3b" aria-expanded="false" aria-controls="collapse3b">
+                                        Creación de contenidos
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse3b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4b" aria-expanded="false" aria-controls="collapse4b">
+                                        Acceso a contenidos en ambito "privado"
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  <div id="collapse4b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                      <ul class="list-group">
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Default checkbox
+                                              </label>
+                                            </div>
+                                          </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                          </div>
-                          <div class="col-sm-12 col-md-6">
-                              <div id="dataTable_filter" class="dataTables_filter">
-                                  <label>Search:
-                                      <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
-                                  </label>
-                              </div>
-                          </div>
-                      </div> -->
-                      <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                          <!-- Theme option -->
-                            <!-- <div class="dataTables_length" id="dataTable_length">
-                                <label>Show
-                                    <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
-                                        <option value="10">10</option>
-                                        <option value="25">25</option>
-                                        <option value="50">50</option>
-                                        <option value="100">100</option>
-                                    </select> entries</label>
-                            </div> -->
-                            <!-- Bootstrap option -->
-                            <div class="form-group">
-                              <label for="">Mostrar entradas</label>
-                              <select class="form-control" id="">
-                                <option>10</option>
-                                <option>20</option>
-                                <option>30</option>
-                                <option>40</option>
-                                <option>50</option>
-                              </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <!-- Theme option -->
-                            <!-- <div id="dataTable_filter" class="dataTables_filter">
-                                <label>Search:
-                                    <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
-                                </label>
-                            </div> -->
-                            <!-- Bootstrap option -->
-                            <div class="form-group">
-                                <label>Buscar usuario:</label>
-                                <input type="search" class="form-control" placeholder="Busca aquÃ­...">
-                            </div>
-                        </div>
-                    </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <table class="table table-bordered table-striped table-hover m-0">
-                            <thead>
-                              <tr>
-                                <th>
-                                  <div class="form-check">
-                                    	<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    	<label class="form-check-label" for="defaultCheck1">Selecciona todos</label>
-                                	</div>
-                                </th>
-                                <th>Nombre</th>
-                                <th>Agregar</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                	<div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label sr-only" for="defaultCheck1">
-                                      Selecciona
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  <a href="users-edit.html">
-                                    <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                                  </a>
-                                </td>
-                                <td>
-                                	<a title="Agregar nuevo" class="text-primary"><i class="fas fa-plus-circle fa-2x"></i></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                	<div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label sr-only" for="defaultCheck1">
-                                      Selecciona
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  <a href="users-edit.html">
-                                    <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                                  </a>
-                                </td>
-                                <td>
-                                	<a title="Agregar nuevo" class="text-primary"><i class="fas fa-plus-circle fa-2x"></i></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                	<div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label sr-only" for="defaultCheck1">
-                                      Selecciona
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  <a href="users-edit.html">
-                                    <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="48" height="48" class="rounded-circle mr-2" alt="Avatar"> Ashley Briggs
-                                  </a>
-                                </td>
-                                <td>
-                                	<a title="Agregar nuevo" class="text-primary"><i class="fas fa-plus-circle fa-2x"></i></a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
                           </div>
                         </div>
                       </div>
                       <div class="card-footer">
-                        <div class="row">
-                          <div class="col-sm-12 col-md-6">
-                            <div class="dataTables_info py-2" id="dataTable_info" role="status" aria-live="polite">Mostrando 1 a 10 de 27 entradas</div>
-                          </div>
-                          <div class="col-sm-12 col-md-6">
-                            <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                              <ul class="pagination">
-                                <li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li>
-                                <li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
-                                <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
-                                <li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
-                                <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
-                              </ul>
-                            </div>
-                          </div>
+                        <div class="small">
+                          Selecciona accesos según area para este perfil particular
                         </div>
                       </div>
                     </div>
@@ -730,7 +1010,7 @@
                         <!-- Bootstrap option -->
                         <div class="form-group">
                             <label>Buscar grupo:</label>
-                            <input type="search" class="form-control" placeholder="Busca aquÃ­...">
+                            <input type="search" class="form-control" placeholder="Busca aquí...">
                         </div>
                     </div>
                 </div>
@@ -803,8 +1083,8 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="text-left">ElimiarÃÂ¡s el grupo y su configuraciÃÂ³n de acceso y permisos para los usarios que lo integran.</div>
-                  <div class="text-left">Los usuarios asociados a este grupo NO serÃÂ¡n eliminados.</div>
+                  <div class="text-left">Elimiarás el grupo y su configuración de acceso y permisos para los usarios que lo integran.</div>
+                  <div class="text-left">Los usuarios asociados a este grupo NO serán eliminados.</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger">Eliminar</button>
@@ -840,7 +1120,7 @@
                         </select>
                       </div>
                   </div>
-                <div class="row" id="user-list">
+                <div class="row" id="">
                   <div class="col-12">
                     <div class="card mb-4">
                       <div class="card-header">
@@ -901,7 +1181,7 @@
                             <!-- Bootstrap option -->
                             <div class="form-group">
                                 <label>Buscar usuario:</label>
-                                <input type="search" class="form-control" placeholder="Busca aquÃ­...">
+                                <input type="search" class="form-control" placeholder="Busca aquí...">
                             </div>
                         </div>
                     </div>
@@ -1079,7 +1359,7 @@
                       <!-- Bootstrap option -->
                       <div class="form-group">
                           <label>Buscar usuario:</label>
-                          <input type="search" class="form-control" placeholder="Busca aquÃ­...">
+                          <input type="search" class="form-control" placeholder="Busca aquí...">
                       </div>
                   </div>
               </div>
@@ -1201,7 +1481,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <div class="text-left">CancelarÃÂ¡s el acceso y permisos de dicho usario</div>
+                  <div class="text-left">Cancelarás el acceso y permisos de dicho usario</div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger">Eliminar</button>
@@ -1225,91 +1505,92 @@
                 <div class="row" id="user-list">
                   <div class="col-12">
                     <form>
-                                  <fieldset>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                          <label for="inputEmail4">Usuario</label>
-                                          <input type="text" class="form-control" id="" placeholder="Valerie_Luna" disabled="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                          <label for="inputPassword4">Mail</label>
-                                          <input type="email" class="form-control" id="" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                          <label for="">Nombre</label>
-                                          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                          <label for="inputPassword4">Apellido</label>
-                                          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                          <label for="pass-input">ContraseÃÂ±a</label>
-                                          <input type="password" class="form-control" id="pass-input" placeholder="ContraseÃÂ±a">
-                                          <small id="passwordHelpBlock" class="form-text text-muted">
-                                            Tu contraseÃÂ±a debe tener de 8-20 a caracteres con letras y numeros, no puede contener espacios ni caracteres especiales.
-                                          </small>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                          <label for="repeat-pass-input">Repetir ContraseÃÂ±a</label>
-                                          <input type="password" class="form-control" id="repeat-pass-input" placeholder="Repetir contraseÃÂ±a">
-                                          <small id="passwordHelpBlock" class="form-text text-muted">
-                                            Tu contraseÃÂ±a debe coincidir
-                                          </small>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                          <label for="">Estado</label>
+                      <fieldset>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Usuario</label>
+                              <input type="text" class="form-control" id="" placeholder="Valerie_Luna" disabled="">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Mail</label>
+                              <input type="email" class="form-control" id="" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                              <label for="">Nombre</label>
+                              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Apellido</label>
+                              <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                              <label for="pass-input">Contraseña</label>
+                              <input type="password" class="form-control" id="pass-input" placeholder="Contraseña">
+                              <small id="passwordHelpBlock" class="form-text text-muted">
+                                Tu contraseña debe tener de 8-20 a caracteres con letras y numeros, no puede contener espacios ni caracteres especiales.
+                              </small>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="repeat-pass-input">Repetir Contraseña</label>
+                              <input type="password" class="form-control" id="repeat-pass-input" placeholder="Repetir contraseña">
+                              <small id="passwordHelpBlock" class="form-text text-muted">
+                                Tu contraseña debe coincidir
+                              </small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                              <label for="">Estado</label>
 
-                                            <select class="form-control" id="">
-                                              <option>Valido</option>
-                                              <option>Rechazado</option>
-                                              <option>Pendiente de aprovaciÃÂ³n</option>
-                                            </select>
+                                <select class="form-control" id="">
+                                  <option>Valido</option>
+                                  <option>Rechazado</option>
+                                  <option>Pendiente de aprovación</option>
+                                </select>
 
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                          <label for="">Grupo</label>
-                                          <form>
-                                            <select class="form-control" id="">
-                                              <option>1</option>
-                                              <option>2</option>
-                                              <option>3</option>
-                                            </select>
-                                          </form>
-                                        </div>
-                                    </div>
-                                    <button class="btn mb-3 px-0" type="button" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="collapseExample">ConfiguraciÃÂ³n avanzada</button>
-                                    <div class="collapse mb-2" id="advanced-settings">
-                                      <div class="card card-body">
-                                        <div class="row">
-                                            <div class="form-group col-md-6">
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
-                                                <label class="form-check-label" for="">
-                                                  Usuario activo (Crea contenidos)
-                                                </label>
-                                              </div>
-                                              <small>Puede crear contenidos desde el sitio web (si esta disponible)</small>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
-                                                <label class="form-check-label" for="">
-                                                  Usa cosola de administraciÃÂ³n
-                                                </label>
-                                              </div>
-                                              <small>Puede usar la consola segÃÂºn permisos</small>
-                                            </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </fieldset></form>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="">Grupo</label>
+                              <form>
+                                <select class="form-control" id="">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                </select>
+                              </form>
+                            </div>
+                        </div>
+                        <button class="btn mb-3 px-0 text-primary" type="button" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="collapseExample">Configuración avanzada</button>
+                        <div class="collapse mb-2" id="advanced-settings">
+                          <div class="card card-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
+                                    <label class="form-check-label" for="">
+                                      Usuario activo (Crea contenidos)
+                                    </label>
+                                  </div>
+                                  <small>Puede crear contenidos desde el sitio web (si esta disponible)</small>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1">
+                                    <label class="form-check-label" for="">
+                                      Usa cosola de administración
+                                    </label>
+                                  </div>
+                                  <small>Puede usar la consola según permisos</small>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
                   </div>
                 </div>
               </div>
