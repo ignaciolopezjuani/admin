@@ -73,6 +73,9 @@ a {
   .carousel-control-prev,
   .carousel-control-next {
     width: 2em;
+    height: 4em;
+    top: 50%;
+    margin-top: -2em;
   }
 }
 
