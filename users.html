@@ -202,7 +202,7 @@
                 <h6 class="dropdown-header text-center text-uppercase font-weight-bold"><a class="dropdown-items text-white" href="#">Mostrar todos los resultados</a></h6>
               </div>
           </div>
-          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">BÃÂºsqueda avanzada</a></div>
+          <div class="d-none d-sm-inline-block"><a href="advanced-search.html" class="text-xs font-weight-bold text-primary text-uppercase mt-1">Búsqueda avanzada</a></div>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -376,9 +376,21 @@
 
           <!-- Content Row -->
 
+          <!-- Nav -->
+
+          <nav class="nav nav-pills flex-column flex-sm-row my-3">
+            <a class="flex-sm-fill text-sm-center nav-link active" id="profiles-nav-item" data-toggle="tab" href="#profiles-list" role="tab" aria-controls="profiles-nav-item" aria-selected="true">Perfiles</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="groups-nav-item" data-toggle="tab" href="#group-list" role="tab" aria-controls="groups-nav-item" aria-selected="false">Grupos</a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="users-nav-item" data-toggle="tab" href="#user-list" role="tab" aria-controls="users-nav-item" aria-selected="false">Usuarios</a>
+          </nav>
+
+          <!-- Nav end -->
+
+        <div class="tab-content" id="profile-groups-users-tabContent">
+
           <!-- Profiles -->
 
-          <div class="row" id="profiles-list">
+          <div class="row tab-pane fade show active" role="tabpanel" aria-labelledby="profiles-nav-item" id="profiles-list">
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
@@ -627,339 +639,338 @@
 
           <!-- Create new profile -->
 
-          <div class="modal fade" id="create-new-profile" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Crear nuevo perfil</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">x</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                      <div class="form-group col-md-12">
-                        <label for="group-name">Nombre del perfil</label>
-                        <input type="text" class="form-control" id="group-name" placeholder="Ej. Marketing">
-                      </div>
-                  </div>
-                <div class="row" id="">
-                  <div class="col-12">
-                    <div class="card mb-4">
-                      <div class="card-header">
-                        <h5 class="d-inline card-title">Configura permisos y accesos</h5>
-                      </div>
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card">
-                                  <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1a" aria-expanded="true" aria-controls="collapse-1a">
-                                        Diseño y diagramación de página
-                                      </button>
-                                    </h2>
+            <div class="modal fade" id="create-new-profile" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Crear nuevo perfil</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                        <div class="form-group col-md-12">
+                          <label for="group-name">Nombre del perfil</label>
+                          <input type="text" class="form-control" id="group-name" placeholder="Ej. Marketing">
+                        </div>
+                    </div>
+                  <div class="row" id="">
+                    <div class="col-12">
+                      <div class="card mb-4">
+                        <div class="card-header">
+                          <h5 class="d-inline card-title">Configura permisos y accesos</h5>
+                        </div>
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="accordion" id="accordionExample">
+                                  <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1a" aria-expanded="true" aria-controls="collapse-1a">
+                                          Diseño y diagramación de página
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="collapse-1a" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                      <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div id="collapse-1a" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
-                                    <div class="card-body">
-                                      <ul class="list-group">
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                      </ul>
+                                  <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2b" aria-expanded="false" aria-controls="collapse2b">
+                                          Gestión de usuarios
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="collapse2b" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+                                      <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3b" aria-expanded="false" aria-controls="collapse3b">
+                                          Creación de contenidos
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="collapse3b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                      <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4b" aria-expanded="false" aria-controls="collapse4b">
+                                          Acceso a contenidos en ambito "privado"
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    <div id="collapse4b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                      <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="card">
-                                  <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2b" aria-expanded="false" aria-controls="collapse2b">
-                                        Gestión de usuarios
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div id="collapse2b" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
-                                    <div class="card-body">
-                                      <ul class="list-group">
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card">
-                                  <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3b" aria-expanded="false" aria-controls="collapse3b">
-                                        Creación de contenidos
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div id="collapse3b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      <ul class="list-group">
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card">
-                                  <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4b" aria-expanded="false" aria-controls="collapse4b">
-                                        Acceso a contenidos en ambito "privado"
-                                      </button>
-                                    </h2>
-                                  </div>
-                                  <div id="collapse4b" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                      <ul class="list-group">
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li class="list-group-item">
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                              <label class="form-check-label" for="defaultCheck1">
-                                                Default checkbox
-                                              </label>
-                                            </div>
-                                          </li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="card-footer">
-                        <div class="small">
-                          Selecciona accesos según area para este perfil particular
+                        <div class="card-footer">
+                          <div class="small">
+                            Selecciona accesos según area para este perfil particular
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Agregar</button>
-                <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar</button>
+                  <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            </div>
 
           <!-- Create new profile end -->
-
 
           </div>
 
@@ -967,7 +978,7 @@
 
           <!-- Groups -->
 
-          <div class="row" id="group-list">
+          <div class="row tab-pane fade" role="tabpanel" aria-labelledby="groups-nav-item" id="group-list">
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
@@ -1096,7 +1107,7 @@
 
           <!-- Add user to group modal-->
           <div class="modal fade" id="create-new-group" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Crear nuevo grupo</h5>
@@ -1288,15 +1299,14 @@
               </div>
             </div>
           </div>
-        </div>
-
+          </div>
 
           </div>
 
           <!-- Content Row -->
 
           <!-- Users -->
-          <div class="row" id="user-list">
+          <div class="row tab-pane fade" role="tabpanel" aria-labelledby="users-nav-item" id="user-list">
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
@@ -1603,6 +1613,8 @@
         </div>
 
           </div>
+
+        </div>
 
         </div>
         <!-- End of Main Content -->
