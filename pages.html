@@ -444,6 +444,2783 @@
           <!-- Content end -->
 
         </div>
+
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Administrar Páginas</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
+
+          <!-- Content -->
+
+          <div class="card shadow mb-4">
+            <div class="card-header">
+              <h5 class="d-inline card-title">Paginas</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <!-- Theme option -->
+
+                    <!-- Bootstrap option -->
+                    <div class="form-group">
+                      <label for="">Ordenar según: Nombre</label>
+                      <select class="form-control" id="">
+                        <option>url</option>
+                        <option>nombre</option>
+
+
+                        <option>fecha de creación</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <!-- Theme option -->
+                    <!-- <div id="dataTable_filter" class="dataTables_filter">
+                        <label>Search:
+                            <input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable">
+                        </label>
+                    </div> -->
+                    <!-- Bootstrap option -->
+                    <div class="form-group">
+                        <label>Buscar pagina:</label>
+                        <input type="search" class="form-control" placeholder="Busca aquí...">
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>URL</th>
+                  <th>Autor</th>
+                  <th class="text-center"><i title="Esta página debe estar incluída en el menú?" class="fas fa-bars"></i></th>
+                  <th class="text-center"><i title="Página visible?" class="fa fa-eye"></i></th>
+                  <th class="text-center"><i title="Indexada por buscadores?" class="fa fa-globe"></i></th>
+                  <th class="text-right">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                      <i class="fa fa-home" title="Inicio"></i> <span>Home</span>
+                  </td>
+                  <td>
+                      <a href="/">/</a>
+                  </td>
+                  <td>
+                      <a href="#">Admin</a>
+                  </td>
+                  <td class="text-center">
+                      <i class="fa fa-times-circle text-muted" title="No existe en el menú principal"></i>
+                  </td>
+                  <td class="text-center">
+                      <i title="Visible" class="fas fa-check-circle text-success"></i>
+                  </td>
+                  <td class="text-center">
+                      <i class="fas fa-check-circle" title="Indexado"></i>
+                  </td>
+                  <td class="text-right">
+                      <a href="#" data-toggle="modal" data-target="#page-setup" title="Administrar esta página"><i class="mr4 fa fa-cog text-primary pr-3"></i></a>
+                      <a class="mr4 fa fa-clone pr-3 text-secondary" href="#" title="Clonar esta página"></a>
+                      <a class="fa fa-trash text-danger" href="#" title="Borrar esta página"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                       <span>About us</span>
+                  </td>
+                  <td>
+                      <a href="/aboutus">/aboutus</a>
+                  </td>
+                  <td>
+                      <a href="#">Admin</a>
+                  </td>
+                  <td class="text-center">
+                      <i class="fa fa-times-circle text-muted" title="No existe en el menú principal"></i>
+                  </td>
+                  <td class="text-center">
+
+                      <i class="fas fa-check-circle text-danger" title="Visible"></i>
+                  </td>
+                  <td class="text-center">
+                      <i class="fas fa-check-circle" title="Indexado"></i>
+                  </td>
+                  <td class="text-right">
+                      <a href="#" data-toggle="modal" data-target="#page-setup" title="Administrar esta página"><i class="mr4 fa fa-cog text-primary pr-3"></i></a>
+                      <a class="mr4 fa fa-clone pr-3 text-secondary" href="#" title="Clonar esta página"></a>
+                      <a class="fa fa-trash text-danger" href="#" title="Borrar esta página"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                       <span>Contact Us</span>
+                  </td>
+                  <td>
+                      <a href="/contactus">/contactus</a>
+                  </td>
+                  <td>
+                      <a href="#">Admin</a>
+                  </td>
+                  <td class="text-center">
+                      <i class="fa fa-times-circle text-muted" title="No existe en el menú principal"></i>
+                  </td>
+                  <td class="text-center">
+
+                      <i class="fas fa-check-circle text-warning" title="Visible"></i>
+                  </td>
+                  <td class="text-center">
+                      <i class="fas fa-check-circle" title="Indexado"></i>
+                  </td>
+                  <td class="text-right">
+                      <a href="#" data-toggle="modal" data-target="#page-setup" title="Administrar esta página"><i class="mr4 fa fa-cog text-primary pr-3"></i></a>
+                      <a class="mr4 fa fa-clone pr-3 text-secondary" href="#" title="Clonar esta página"></a>
+                      <a class="fa fa-trash text-danger" href="#" title="Borrar esta página"></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          <!-- Content end -->
+
+        </div>
+
+
+      <!-- Admin page modal -->
+
+      <div class="modal fade" id="page-setup" tabindex="-1" role="dialog" aria-labelledby="" aria-modal="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Administrar pagina</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div role="tabpanel" id="advances_page_info" class="tab-pane fade active show">
+                 <div class="form-group row">
+                    <label class="col-form-label col-md-3" for="page_name">Nombre de la página</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="page_name" value="Home">
+                    </div>
+                </div>
+                <div class="form-group warn_about_call d-none">
+    <div class="col-md-9 offset-md-3">
+        <span class="text-muted" id="warn_about_call_message">
+
+            Parece que su archivo está siendo llamado por
+            <a href="#" data-toggle="popover" data-content="
+
+
+        <b>Páginas</b>
+        <ul>
+            <li>
+                <a href=&quot;/-1&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li><li>
+                <a href=&quot;/&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li>
+        </ul>
+
+
+            " data-html="true" title="" data-original-title="Dependencias">2 páginas</a>.
+            Cambiar su nombre romperá estas llamadas.
+        </span>
+    </div>
+</div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3" for="page_url">URL de la página</label>
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" title="https://tusitio"><small>https://tusitio</small></span>
+                            </div>
+                            <input type="text" class="form-control" id="page_url" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row ask_for_redirect d-none">
+                    <label class="col-form-label col-md-3" for="create_redirect">Redirigir URL antigua</label>
+                    <div class="col-md-2">
+                        <a>
+                            <label class="o_switch" for="create_redirect">
+                                <input type="checkbox" id="create_redirect">
+                                <span></span>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="col-md-7 mt4">
+                        <span class="text-muted" id="dependencies_redirect">
+
+    (podría ser utilizado en <a href="#" data-toggle="popover" data-content="
+
+
+        <b>Páginas</b>
+        <ul>
+            <li>
+                <a href=&quot;/&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li><li>
+                <a href=&quot;/-1&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li><li>
+                <a href=&quot;/&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li><li>
+                <a href=&quot;/contactus&quot; title=&quot;Contact Us&quot; class=&quot;o_text_overflow&quot;>
+                    Contact Us
+                </a>
+            </li><li>
+                <a href=&quot;/aboutus&quot; title=&quot;About us&quot; class=&quot;o_text_overflow&quot;>
+                    About us
+                </a>
+            </li><li>
+                <a href=&quot;/contactus-thank-you&quot; title=&quot;Thanks (Contact us)&quot; class=&quot;o_text_overflow&quot;>
+                    Thanks (Contact us)
+                </a>
+            </li>
+        </ul>
+
+        <b>Plantillas</b>
+        <ul>
+            <li>
+                <a href=&quot;/web#id=267&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.base.setup (id:267)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.base.setup (id:267)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=359&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_mobile.assets_backend (id:359)&quot; class=&quot;o_text_overflow&quot;>
+                    web_mobile.assets_backend (id:359)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=121&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form (id:121)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form (id:121)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=155&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.simplified.form (id:155)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.simplified.form (id:155)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=26&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.cron calendar (id:26)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.cron calendar (id:26)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=316&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.view.calendar (id:316)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.view.calendar (id:316)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=120&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form (id:120)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form (id:120)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=126&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Contact Tags (id:126)&quot; class=&quot;o_text_overflow&quot;>
+                    Contact Tags (id:126)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=129&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Industry (id:129)&quot; class=&quot;o_text_overflow&quot;>
+                    Industry (id:129)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=554&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.external_snippets (id:554)&quot; class=&quot;o_text_overflow&quot;>
+                    website.external_snippets (id:554)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=72&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.menu tree (id:72)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.menu tree (id:72)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=117&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.tree (id:117)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.tree (id:117)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=305&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.form (id:305)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.form (id:305)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=304&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.kanban (id:304)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.kanban (id:304)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=302&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.partner.tree (id:302)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.partner.tree (id:302)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=307&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.search (id:307)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.search (id:307)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=306&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.tree (id:306)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.tree (id:306)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=300&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.followers.tree (id:300)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.followers.tree (id:300)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=289&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message.subtype.tree (id:289)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message.subtype.tree (id:289)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=458&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.view.form.inherit.sms (id:458)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.view.form.inherit.sms (id:458)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=291&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.tracking.value.tree (id:291)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.tracking.value.tree (id:291)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=416&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.assets_frontend (id:416)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.assets_frontend (id:416)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=239&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.assets_frontend (id:239)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.assets_frontend (id:239)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=247&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise._assets_backend_helpers (id:247)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise._assets_backend_helpers (id:247)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=245&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise._assets_primary_variables (id:245)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise._assets_primary_variables (id:245)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=246&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise._assets_secondary_variables (id:246)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise._assets_secondary_variables (id:246)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=134&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.bank.form (id:134)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.bank.form (id:134)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=275&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.400 (id:275)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.400 (id:275)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=276&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.403 (id:276)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.403 (id:276)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=277&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.404 (id:277)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.404 (id:277)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=278&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.500 (id:278)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.500 (id:278)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=546&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_faq_collapse (id:546)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_faq_collapse (id:546)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=285&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Add Followers (id:285)&quot; class=&quot;o_text_overflow&quot;>
+                    Add Followers (id:285)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=534&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_alert (id:534)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_alert (id:534)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=95&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Apps Kanban (id:95)&quot; class=&quot;o_text_overflow&quot;>
+                    Apps Kanban (id:95)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=436&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.signature_form (id:436)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.signature_form (id:436)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=373&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;auth_signup.assets_frontend (id:373)&quot; class=&quot;o_text_overflow&quot;>
+                    auth_signup.assets_frontend (id:373)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=370&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;auth_signup.fields (id:370)&quot; class=&quot;o_text_overflow&quot;>
+                    auth_signup.fields (id:370)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=420&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_back_in_edit_mode (id:420)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_back_in_edit_mode (id:420)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=184&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_backend (id:184)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_backend (id:184)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=528&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_banner (id:528)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_banner (id:528)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=194&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.brand_promotion (id:194)&quot; class=&quot;o_text_overflow&quot;>
+                    web.brand_promotion (id:194)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=485&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.brand_promotion (id:485)&quot; class=&quot;o_text_overflow&quot;>
+                    website.brand_promotion (id:485)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=193&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.brand_promotion_message (id:193)&quot; class=&quot;o_text_overflow&quot;>
+                    web.brand_promotion_message (id:193)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=538&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_btn (id:538)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_btn (id:538)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=544&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_call_to_action (id:544)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_call_to_action (id:544)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=535&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_card (id:535)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_card (id:535)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=533&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_carousel (id:533)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_carousel (id:533)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=151&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Change Password (id:151)&quot; class=&quot;o_text_overflow&quot;>
+                    Change Password (id:151)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=444&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Change Password (id:444)&quot; class=&quot;o_text_overflow&quot;>
+                    Change Password (id:444)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=152&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Change Password Users (id:152)&quot; class=&quot;o_text_overflow&quot;>
+                    Change Password Users (id:152)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=241&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.colorpicker (id:241)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.colorpicker (id:241)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=531&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_three_columns (id:531)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_three_columns (id:531)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=182&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_common (id:182)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_common (id:182)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=518&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.company_description (id:518)&quot; class=&quot;o_text_overflow&quot;>
+                    website.company_description (id:518)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=543&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_company_team (id:543)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_company_team (id:543)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=542&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_comparisons (id:542)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_comparisons (id:542)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=18&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Config Wizard Steps (id:18)&quot; class=&quot;o_text_overflow&quot;>
+                    Config Wizard Steps (id:18)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=19&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Config Wizard Steps (id:19)&quot; class=&quot;o_text_overflow&quot;>
+                    Config Wizard Steps (id:19)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=429&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_contact (id:429)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_contact (id:429)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=602&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.contactus_form (id:602)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.contactus_form (id:602)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=125&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Contact Tags (id:125)&quot; class=&quot;o_text_overflow&quot;>
+                    Contact Tags (id:125)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=525&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_cover (id:525)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_cover (id:525)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=34&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Create Menu (id:34)&quot; class=&quot;o_text_overflow&quot;>
+                    Create Menu (id:34)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=202&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.debug_icon (id:202)&quot; class=&quot;o_text_overflow&quot;>
+                    web.debug_icon (id:202)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=2&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Decimal Precision (id:2)&quot; class=&quot;o_text_overflow&quot;>
+                    Decimal Precision (id:2)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=3&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Decimal Precision List (id:3)&quot; class=&quot;o_text_overflow&quot;>
+                    Decimal Precision List (id:3)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=108&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Demo Failure Dialog (id:108)&quot; class=&quot;o_text_overflow&quot;>
+                    Demo Failure Dialog (id:108)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=106&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Document Layout (id:106)&quot; class=&quot;o_text_overflow&quot;>
+                    Document Layout (id:106)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=228&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.wysiwyg_iframe_editor_assets (id:228)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.wysiwyg_iframe_editor_assets (id:228)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=103&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Export Translations (id:103)&quot; class=&quot;o_text_overflow&quot;>
+                    Export Translations (id:103)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=540&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_facebook_page (id:540)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_facebook_page (id:540)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=530&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_features (id:530)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_features (id:530)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=547&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_features_grid (id:547)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_features_grid (id:547)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=487&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.affix_top_menu (id:487)&quot; class=&quot;o_text_overflow&quot;>
+                    website.affix_top_menu (id:487)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=490&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.footer_custom (id:490)&quot; class=&quot;o_text_overflow&quot;>
+                    website.footer_custom (id:490)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=598&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.s_website_form (id:598)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.s_website_form (id:598)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=192&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.frontend_layout (id:192)&quot; class=&quot;o_text_overflow&quot;>
+                    web.frontend_layout (id:192)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=467&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;General Settings (id:467)&quot; class=&quot;o_text_overflow&quot;>
+                    General Settings (id:467)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=104&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Generate Missing Terms (id:104)&quot; class=&quot;o_text_overflow&quot;>
+                    Generate Missing Terms (id:104)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=440&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Grant Portal Access (id:440)&quot; class=&quot;o_text_overflow&quot;>
+                    Grant Portal Access (id:440)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=527&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_image_text (id:527)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_image_text (id:527)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=541&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_image_gallery (id:541)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_image_gallery (id:541)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=99&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Import Translation (id:99)&quot; class=&quot;o_text_overflow&quot;>
+                    Import Translation (id:99)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=128&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Industry (id:128)&quot; class=&quot;o_text_overflow&quot;>
+                    Industry (id:128)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=5&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Inheritable view for installer objects (id:5)&quot; class=&quot;o_text_overflow&quot;>
+                    Inheritable view for installer objects (id:5)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=434&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.my_account_link (id:434)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.my_account_link (id:434)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=98&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Load a Translation (id:98)&quot; class=&quot;o_text_overflow&quot;>
+                    Load a Translation (id:98)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=196&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.login (id:196)&quot; class=&quot;o_text_overflow&quot;>
+                    web.login (id:196)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=195&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.login_layout (id:195)&quot; class=&quot;o_text_overflow&quot;>
+                    web.login_layout (id:195)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=388&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail_enterprise.assets_backend (id:388)&quot; class=&quot;o_text_overflow&quot;>
+                    mail_enterprise.assets_backend (id:388)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=604&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_mail.head (id:604)&quot; class=&quot;o_text_overflow&quot;>
+                    website_mail.head (id:604)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=321&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_notification_paynow (id:321)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_notification_paynow (id:321)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=418&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.frontend_layout (id:418)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.frontend_layout (id:418)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=484&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.layout (id:484)&quot; class=&quot;o_text_overflow&quot;>
+                    website.layout (id:484)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=552&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_mega_menu_menu_image_menu (id:552)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_mega_menu_menu_image_menu (id:552)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=97&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Module Update (id:97)&quot; class=&quot;o_text_overflow&quot;>
+                    Module Update (id:97)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=100&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Module Upgrade (id:100)&quot; class=&quot;o_text_overflow&quot;>
+                    Module Upgrade (id:100)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=551&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_mega_menu_multi_menus (id:551)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_mega_menu_multi_menus (id:551)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=423&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_my_home (id:423)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_my_home (id:423)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=424&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_docs_entry (id:424)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_docs_entry (id:424)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=426&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_record_sidebar (id:426)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_record_sidebar (id:426)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=425&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_table (id:425)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_table (id:425)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=502&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.website_info (id:502)&quot; class=&quot;o_text_overflow&quot;>
+                    website.website_info (id:502)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=203&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.pdf_js_lib (id:203)&quot; class=&quot;o_text_overflow&quot;>
+                    web.pdf_js_lib (id:203)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=433&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.pager (id:433)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.pager (id:433)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=495&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.pager (id:495)&quot; class=&quot;o_text_overflow&quot;>
+                    website.pager (id:495)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=549&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_parallax (id:549)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_parallax (id:549)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=391&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;partner_autocomplete.assets_backend (id:391)&quot; class=&quot;o_text_overflow&quot;>
+                    partner_autocomplete.assets_backend (id:391)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=532&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_picture (id:532)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_picture (id:532)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=430&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_archive_groups (id:430)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_archive_groups (id:430)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=417&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.assets_tests (id:417)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.assets_tests (id:417)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=419&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_breadcrumbs (id:419)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_breadcrumbs (id:419)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=421&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_layout (id:421)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_layout (id:421)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=432&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.record_pager (id:432)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.record_pager (id:432)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=427&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_searchbar (id:427)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_searchbar (id:427)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=428&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_record_layout (id:428)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_record_layout (id:428)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=550&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_quotes_carousel (id:550)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_quotes_carousel (id:550)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=537&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_rating (id:537)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_rating (id:537)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=545&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_references (id:545)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_references (id:545)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=206&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.report_layout (id:206)&quot; class=&quot;o_text_overflow&quot;>
+                    web.report_layout (id:206)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=77&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Reset View Architecture (id:77)&quot; class=&quot;o_text_overflow&quot;>
+                    Reset View Architecture (id:77)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=372&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;auth_signup.reset_password (id:372)&quot; class=&quot;o_text_overflow&quot;>
+                    auth_signup.reset_password (id:372)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=441&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Saas hide cron doall (id:441)&quot; class=&quot;o_text_overflow&quot;>
+                    Saas hide cron doall (id:441)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=443&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Saas user reset button view (id:443)&quot; class=&quot;o_text_overflow&quot;>
+                    Saas user reset button view (id:443)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=442&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Saas user view (id:442)&quot; class=&quot;o_text_overflow&quot;>
+                    Saas user view (id:442)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=244&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.s_hr (id:244)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.s_hr (id:244)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=539&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_hr (id:539)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_hr (id:539)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=15&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Server Action (id:15)&quot; class=&quot;o_text_overflow&quot;>
+                    Server Action (id:15)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=16&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Server Actions (id:16)&quot; class=&quot;o_text_overflow&quot;>
+                    Server Actions (id:16)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=536&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_share (id:536)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_share (id:536)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=486&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.layout_logo_show (id:486)&quot; class=&quot;o_text_overflow&quot;>
+                    website.layout_logo_show (id:486)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=503&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.show_website_info (id:503)&quot; class=&quot;o_text_overflow&quot;>
+                    website.show_website_info (id:503)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=422&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_show_sign_in (id:422)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_show_sign_in (id:422)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=437&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_sidebar (id:437)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_sidebar (id:437)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=369&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;auth_signup.login (id:369)&quot; class=&quot;o_text_overflow&quot;>
+                    auth_signup.login (id:369)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=371&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;auth_signup.signup (id:371)&quot; class=&quot;o_text_overflow&quot;>
+                    auth_signup.signup (id:371)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=600&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.register_s_website_form (id:600)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.register_s_website_form (id:600)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=483&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.submenu (id:483)&quot; class=&quot;o_text_overflow&quot;>
+                    website.submenu (id:483)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=231&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.summernote (id:231)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.summernote (id:231)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=548&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_tabs (id:548)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_tabs (id:548)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=189&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_tests (id:189)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_tests (id:189)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=190&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.conditional_assets_tests (id:190)&quot; class=&quot;o_text_overflow&quot;>
+                    web.conditional_assets_tests (id:190)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=526&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_text_image (id:526)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_text_image (id:526)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=529&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_text_block (id:529)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_text_block (id:529)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=610&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Themes Kanban (id:610)&quot; class=&quot;o_text_overflow&quot;>
+                    Themes Kanban (id:610)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=524&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.s_title (id:524)&quot; class=&quot;o_text_overflow&quot;>
+                    website.s_title (id:524)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=448&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;saas_trial.database_validated (id:448)&quot; class=&quot;o_text_overflow&quot;>
+                    saas_trial.database_validated (id:448)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=102&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Uninstall module (id:102)&quot; class=&quot;o_text_overflow&quot;>
+                    Uninstall module (id:102)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=365&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_unsplash.assets_frontend (id:365)&quot; class=&quot;o_text_overflow&quot;>
+                    web_unsplash.assets_frontend (id:365)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=364&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_unsplash.web_unsplash_assets (id:364)&quot; class=&quot;o_text_overflow&quot;>
+                    web_unsplash.web_unsplash_assets (id:364)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=236&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.assets_backend (id:236)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.assets_backend (id:236)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=234&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.assets_common (id:234)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.assets_common (id:234)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=191&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.layout (id:191)&quot; class=&quot;o_text_overflow&quot;>
+                    web.layout (id:191)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=187&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_frontend (id:187)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_frontend (id:187)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=478&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.assets_frontend (id:478)&quot; class=&quot;o_text_overflow&quot;>
+                    website.assets_frontend (id:478)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=474&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.assets_tests (id:474)&quot; class=&quot;o_text_overflow&quot;>
+                    website.assets_tests (id:474)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=475&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.assets_backend (id:475)&quot; class=&quot;o_text_overflow&quot;>
+                    website.assets_backend (id:475)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=480&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.compiled_assets_wysiwyg (id:480)&quot; class=&quot;o_text_overflow&quot;>
+                    website.compiled_assets_wysiwyg (id:480)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=481&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.assets_wysiwyg (id:481)&quot; class=&quot;o_text_overflow&quot;>
+                    website.assets_wysiwyg (id:481)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=482&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.assets_editor (id:482)&quot; class=&quot;o_text_overflow&quot;>
+                    website.assets_editor (id:482)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=592&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.assets_frontend (id:592)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.assets_frontend (id:592)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=594&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.assets_tests (id:594)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.assets_tests (id:594)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=593&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.assets_editor (id:593)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.assets_editor (id:593)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=521&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.list_website_pages (id:521)&quot; class=&quot;o_text_overflow&quot;>
+                    website.list_website_pages (id:521)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=519&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.website_search_box (id:519)&quot; class=&quot;o_text_overflow&quot;>
+                    website.website_search_box (id:519)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=609&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_theme_install.website_theme_install_assets (id:609)&quot; class=&quot;o_text_overflow&quot;>
+                    website_theme_install.website_theme_install_assets (id:609)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=229&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.compiled_assets_wysiwyg (id:229)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.compiled_assets_wysiwyg (id:229)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=230&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.assets_wysiwyg (id:230)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.assets_wysiwyg (id:230)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=177&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_backend_helpers (id:177)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_backend_helpers (id:177)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=235&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor._assets_backend_helpers (id:235)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor._assets_backend_helpers (id:235)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=179&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_bootstrap (id:179)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_bootstrap (id:179)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=180&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_common_minimal_js (id:180)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_common_minimal_js (id:180)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=178&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_frontend_helpers (id:178)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_frontend_helpers (id:178)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=237&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor._assets_frontend_helpers (id:237)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor._assets_frontend_helpers (id:237)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=415&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal._assets_frontend_helpers (id:415)&quot; class=&quot;o_text_overflow&quot;>
+                    portal._assets_frontend_helpers (id:415)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=477&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website._assets_frontend_helpers (id:477)&quot; class=&quot;o_text_overflow&quot;>
+                    website._assets_frontend_helpers (id:477)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=185&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_frontend_minimal_js (id:185)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_frontend_minimal_js (id:185)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=238&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor._assets_frontend_minimal_js (id:238)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor._assets_frontend_minimal_js (id:238)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=176&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_helpers (id:176)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_helpers (id:176)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=174&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_primary_variables (id:174)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_primary_variables (id:174)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=232&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor._assets_primary_variables (id:232)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor._assets_primary_variables (id:232)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=333&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail._assets_primary_variables (id:333)&quot; class=&quot;o_text_overflow&quot;>
+                    mail._assets_primary_variables (id:333)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=414&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal._assets_primary_variables (id:414)&quot; class=&quot;o_text_overflow&quot;>
+                    portal._assets_primary_variables (id:414)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=472&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website._assets_primary_variables (id:472)&quot; class=&quot;o_text_overflow&quot;>
+                    website._assets_primary_variables (id:472)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=175&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_secondary_variables (id:175)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_secondary_variables (id:175)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=233&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor._assets_secondary_variables (id:233)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor._assets_secondary_variables (id:233)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=473&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website._assets_secondary_variables (id:473)&quot; class=&quot;o_text_overflow&quot;>
+                    website._assets_secondary_variables (id:473)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=173&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web._assets_utils (id:173)&quot; class=&quot;o_text_overflow&quot;>
+                    web._assets_utils (id:173)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=393&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;partner_autocomplete.additional_info_template (id:393)&quot; class=&quot;o_text_overflow&quot;>
+                    partner_autocomplete.additional_info_template (id:393)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=209&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.address_layout (id:209)&quot; class=&quot;o_text_overflow&quot;>
+                    web.address_layout (id:209)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=183&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_common_lazy (id:183)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_common_lazy (id:183)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=181&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_common_minimal_js (id:181)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_common_minimal_js (id:181)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=263&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_tour.assets_frontend (id:263)&quot; class=&quot;o_text_overflow&quot;>
+                    web_tour.assets_frontend (id:263)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=588&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;saas_website.assets_frontend (id:588)&quot; class=&quot;o_text_overflow&quot;>
+                    saas_website.assets_frontend (id:588)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=589&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_enterprise.assets_frontend (id:589)&quot; class=&quot;o_text_overflow&quot;>
+                    website_enterprise.assets_frontend (id:589)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=188&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_frontend_lazy (id:188)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_frontend_lazy (id:188)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=186&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.assets_frontend_minimal_js (id:186)&quot; class=&quot;o_text_overflow&quot;>
+                    web.assets_frontend_minimal_js (id:186)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=105&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.partner.merge.automatic.wizard.form (id:105)&quot; class=&quot;o_text_overflow&quot;>
+                    base.partner.merge.automatic.wizard.form (id:105)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=220&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base_import.assets_backend (id:220)&quot; class=&quot;o_text_overflow&quot;>
+                    base_import.assets_backend (id:220)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=222&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base_import.qunit_mobile_suite (id:222)&quot; class=&quot;o_text_overflow&quot;>
+                    base_import.qunit_mobile_suite (id:222)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=221&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base_import.qunit_suite (id:221)&quot; class=&quot;o_text_overflow&quot;>
+                    base_import.qunit_suite (id:221)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=216&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.basic_layout (id:216)&quot; class=&quot;o_text_overflow&quot;>
+                    web.basic_layout (id:216)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=271&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;bus.qunit_suite (id:271)&quot; class=&quot;o_text_overflow&quot;>
+                    bus.qunit_suite (id:271)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=224&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_cohort.assets_backend (id:224)&quot; class=&quot;o_text_overflow&quot;>
+                    web_cohort.assets_backend (id:224)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=225&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_cohort.qunit_suite (id:225)&quot; class=&quot;o_text_overflow&quot;>
+                    web_cohort.qunit_suite (id:225)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=89&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.contact (id:89)&quot; class=&quot;o_text_overflow&quot;>
+                    base.contact (id:89)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=88&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.contact_name (id:88)&quot; class=&quot;o_text_overflow&quot;>
+                    base.contact_name (id:88)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=507&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_css (id:507)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_css (id:507)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=510&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_csv (id:510)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_csv (id:510)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=505&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_js (id:505)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_js (id:505)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=508&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_less (id:508)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_less (id:508)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=504&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_page (id:504)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_page (id:504)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=509&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_scss (id:509)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_scss (id:509)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=506&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.default_xml (id:506)&quot; class=&quot;o_text_overflow&quot;>
+                    website.default_xml (id:506)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=269&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base_setup.assets_backend (id:269)&quot; class=&quot;o_text_overflow&quot;>
+                    base_setup.assets_backend (id:269)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=339&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;email.template.form (id:339)&quot; class=&quot;o_text_overflow&quot;>
+                    email.template.form (id:339)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=341&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;email.template.search (id:341)&quot; class=&quot;o_text_overflow&quot;>
+                    email.template.search (id:341)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=340&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;email.template.tree (id:340)&quot; class=&quot;o_text_overflow&quot;>
+                    email.template.tree (id:340)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=338&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;email_template.preview.form (id:338)&quot; class=&quot;o_text_overflow&quot;>
+                    email_template.preview.form (id:338)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=251&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.qunit_mobile_suite (id:251)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.qunit_mobile_suite (id:251)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=250&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.qunit_suite (id:250)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.qunit_suite (id:250)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=273&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.error_message (id:273)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.error_message (id:273)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=214&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.external_layout (id:214)&quot; class=&quot;o_text_overflow&quot;>
+                    web.external_layout (id:214)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=210&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.external_layout_background (id:210)&quot; class=&quot;o_text_overflow&quot;>
+                    web.external_layout_background (id:210)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=211&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.external_layout_boxed (id:211)&quot; class=&quot;o_text_overflow&quot;>
+                    web.external_layout_boxed (id:211)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=212&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.external_layout_clean (id:212)&quot; class=&quot;o_text_overflow&quot;>
+                    web.external_layout_clean (id:212)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=213&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.external_layout_standard (id:213)&quot; class=&quot;o_text_overflow&quot;>
+                    web.external_layout_standard (id:213)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=375&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;fetchmail.server.form (id:375)&quot; class=&quot;o_text_overflow&quot;>
+                    fetchmail.server.form (id:375)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=374&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;fetchmail.server.list (id:374)&quot; class=&quot;o_text_overflow&quot;>
+                    fetchmail.server.list (id:374)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=376&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;fetchmail.server.search (id:376)&quot; class=&quot;o_text_overflow&quot;>
+                    fetchmail.server.search (id:376)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=605&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_mail.follow (id:605)&quot; class=&quot;o_text_overflow&quot;>
+                    website_mail.follow (id:605)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=260&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_kanban_gauge.qunit_suite (id:260)&quot; class=&quot;o_text_overflow&quot;>
+                    web_kanban_gauge.qunit_suite (id:260)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=256&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_grid.assets_backend (id:256)&quot; class=&quot;o_text_overflow&quot;>
+                    web_grid.assets_backend (id:256)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=258&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_grid.qunit_mobile_suite (id:258)&quot; class=&quot;o_text_overflow&quot;>
+                    web_grid.qunit_mobile_suite (id:258)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=257&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_grid.qunit_suite (id:257)&quot; class=&quot;o_text_overflow&quot;>
+                    web_grid.qunit_suite (id:257)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=207&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.html_container (id:207)&quot; class=&quot;o_text_overflow&quot;>
+                    web.html_container (id:207)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=272&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.http_error (id:272)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.http_error (id:272)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=274&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;http_routing.http_error_debug (id:274)&quot; class=&quot;o_text_overflow&quot;>
+                    http_routing.http_error_debug (id:274)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=281&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;iap.assets_backend (id:281)&quot; class=&quot;o_text_overflow&quot;>
+                    iap.assets_backend (id:281)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=408&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.assets_backend (id:408)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.assets_backend (id:408)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=282&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;iap.account.form (id:282)&quot; class=&quot;o_text_overflow&quot;>
+                    iap.account.form (id:282)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=283&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;iap.account.tree (id:283)&quot; class=&quot;o_text_overflow&quot;>
+                    iap.account.tree (id:283)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=270&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;bus.assets_backend (id:270)&quot; class=&quot;o_text_overflow&quot;>
+                    bus.assets_backend (id:270)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=382&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;im_support.support_qunit_suite (id:382)&quot; class=&quot;o_text_overflow&quot;>
+                    im_support.support_qunit_suite (id:382)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=379&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;im_support.assets_backend (id:379)&quot; class=&quot;o_text_overflow&quot;>
+                    im_support.assets_backend (id:379)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=381&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;im_support.qunit_mobile_suite (id:381)&quot; class=&quot;o_text_overflow&quot;>
+                    im_support.qunit_mobile_suite (id:381)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=380&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;im_support.qunit_suite (id:380)&quot; class=&quot;o_text_overflow&quot;>
+                    im_support.qunit_suite (id:380)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=520&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.index_management (id:520)&quot; class=&quot;o_text_overflow&quot;>
+                    website.index_management (id:520)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=215&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.internal_layout (id:215)&quot; class=&quot;o_text_overflow&quot;>
+                    web.internal_layout (id:215)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=6&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.actions (id:6)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.actions (id:6)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=8&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.actions.search (id:8)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.actions.search (id:8)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=7&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.actions.tree (id:7)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.actions.tree (id:7)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=9&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.report (id:9)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.report (id:9)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=11&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.report.search (id:11)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.report.search (id:11)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=10&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.report.tree (id:10)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.report.tree (id:10)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=344&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.form (id:344)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.form (id:344)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=580&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.form.website (id:580)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.form.website (id:580)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=17&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.search (id:17)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.search (id:17)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=582&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.search.website (id:582)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.search.website (id:582)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=581&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.tree.website (id:581)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.tree.website (id:581)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=456&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.server.view.form.inherit.sms (id:456)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.server.view.form.inherit.sms (id:456)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=20&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.todo.select (id:20)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.todo.select (id:20)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=13&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.windows.form (id:13)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.windows.form (id:13)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=14&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.windows.search (id:14)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.windows.search (id:14)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=12&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.actions.windows.tree (id:12)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.actions.windows.tree (id:12)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=55&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment form (id:55)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment form (id:55)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=296&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment kanban (id:296)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment kanban (id:296)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=57&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment search (id:57)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment search (id:57)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=56&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment tree (id:56)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment tree (id:56)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=583&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment.form.inherit.website (id:583)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment.form.inherit.website (id:583)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=584&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.attachment.tree.inherit.website (id:584)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.attachment.tree.inherit.website (id:584)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=23&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.config_parameter form (id:23)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.config_parameter form (id:23)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=21&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.config_parameter search (id:21)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.config_parameter search (id:21)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=22&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.config_parameter tree (id:22)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.config_parameter tree (id:22)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=27&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.cron search (id:27)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.cron search (id:27)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=25&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.cron tree (id:25)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.cron tree (id:25)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=24&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.cron.view.form (id:24)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.cron.view.form (id:24)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=81&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.default form view (id:81)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.default form view (id:81)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=83&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.default search view (id:83)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.default search view (id:83)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=82&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.default tree view (id:82)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.default tree view (id:82)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=1&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.demo.form (id:1)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.demo.form (id:1)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=28&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.filters form (id:28)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.filters form (id:28)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=30&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.filters search (id:30)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.filters search (id:30)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=29&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.filters tree (id:29)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.filters tree (id:29)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=85&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.logging form (id:85)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.logging form (id:85)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=87&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.logging search (id:87)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.logging search (id:87)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=86&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.logging tree (id:86)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.logging tree (id:86)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=31&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.mail_server form (id:31)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.mail_server form (id:31)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=33&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.mail_server search (id:33)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.mail_server search (id:33)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=32&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.mail_server tree (id:32)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.mail_server tree (id:32)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=35&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model form (id:35)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model form (id:35)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=345&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model form (id:345)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model form (id:345)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=37&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model search (id:37)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model search (id:37)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=346&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model search (id:346)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model search (id:346)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=36&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model tree (id:36)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model tree (id:36)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=53&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.access form (id:53)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.access form (id:53)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=54&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.access search (id:54)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.access search (id:54)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=51&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.access.view.tree (id:51)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.access.view.tree (id:51)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=52&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.access.view.tree.edition (id:52)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.access.view.tree.edition (id:52)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=47&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.constraint form (id:47)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.constraint form (id:47)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=48&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.constraint tree (id:48)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.constraint tree (id:48)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=44&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.data form (id:44)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.data form (id:44)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=46&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.data search (id:46)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.data search (id:46)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=45&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.data tree (id:45)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.data tree (id:45)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=38&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields form (id:38)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields form (id:38)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=347&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields form (id:347)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields form (id:347)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=40&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields search (id:40)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields search (id:40)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=39&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields tree (id:39)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields tree (id:39)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=41&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields.selection form (id:41)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields.selection form (id:41)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=43&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields.selection search (id:43)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields.selection search (id:43)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=42&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.fields.selection tree (id:42)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.fields.selection tree (id:42)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=49&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.relation form (id:49)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.relation form (id:49)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=50&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.model.relation tree (id:50)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.model.relation tree (id:50)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=90&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.category.form (id:90)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.category.form (id:90)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=91&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.category.tree (id:91)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.category.tree (id:91)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=93&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.module.form (id:93)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.module.form (id:93)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=449&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.module.form (id:449)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.module.form (id:449)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=450&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.module.kanban (id:450)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.module.kanban (id:450)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=92&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.module.list.select (id:92)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.module.list.select (id:92)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=94&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.module.module.tree (id:94)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.module.module.tree (id:94)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=163&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.property.form (id:163)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.property.form (id:163)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=162&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.property.search (id:162)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.property.search (id:162)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=164&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.property.tree (id:164)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.property.tree (id:164)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=58&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.rule form (id:58)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.rule form (id:58)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=60&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.rule search (id:60)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.rule search (id:60)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=59&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.rule tree (id:59)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.rule tree (id:59)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=61&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.sequence form (id:61)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.sequence form (id:61)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=63&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.sequence search (id:63)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.sequence search (id:63)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=62&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.sequence tree (id:62)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.sequence tree (id:62)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=65&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation form (id:65)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation form (id:65)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=64&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation search (id:64)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation search (id:64)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=66&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation tree (id:66)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation tree (id:66)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=67&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation tree (id:67)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation tree (id:67)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=68&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation tree (id:68)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation tree (id:68)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=69&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.translation tree (id:69)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.translation tree (id:69)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=71&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.menu form (id:71)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.menu form (id:71)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=73&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.menu.search (id:73)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.menu.search (id:73)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=70&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.menu.tree (id:70)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.menu.tree (id:70)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=74&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view form (id:74)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view form (id:74)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=564&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view form (id:564)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view form (id:564)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=76&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view search (id:76)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view search (id:76)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=75&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view tree (id:75)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view tree (id:75)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=565&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view tree (id:565)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view tree (id:565)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=78&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view.custom form (id:78)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view.custom form (id:78)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=80&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view.custom search (id:80)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view.custom search (id:80)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=79&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;ir.ui.view.custom tree (id:79)&quot; class=&quot;o_text_overflow&quot;>
+                    ir.ui.view.custom tree (id:79)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=500&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.kanban (id:500)&quot; class=&quot;o_text_overflow&quot;>
+                    website.kanban (id:500)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=501&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.kanban_contain (id:501)&quot; class=&quot;o_text_overflow&quot;>
+                    website.kanban_contain (id:501)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=491&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.language_selector (id:491)&quot; class=&quot;o_text_overflow&quot;>
+                    website.language_selector (id:491)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=107&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.layout_preview (id:107)&quot; class=&quot;o_text_overflow&quot;>
+                    base.layout_preview (id:107)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=334&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.assets_backend (id:334)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.assets_backend (id:334)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=311&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.type.search (id:311)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.type.search (id:311)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=310&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.type.view.form (id:310)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.type.view.form (id:310)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=312&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.type.view.tree (id:312)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.type.view.tree (id:312)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=314&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.view.search (id:314)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.view.search (id:314)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=315&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.view.tree (id:315)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.view.tree (id:315)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=328&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.alias.form (id:328)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.alias.form (id:328)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=330&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.alias.search (id:330)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.alias.search (id:330)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=329&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.alias.tree (id:329)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.alias.tree (id:329)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=352&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.blacklist.view.form (id:352)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.blacklist.view.form (id:352)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=353&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.blacklist.view.search (id:353)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.blacklist.view.search (id:353)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=351&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.blacklist.view.tree (id:351)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.blacklist.view.tree (id:351)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=303&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.channel.partner.form (id:303)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.channel.partner.form (id:303)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=286&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.compose.message.form (id:286)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.compose.message.form (id:286)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=301&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.followers.form (id:301)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.followers.form (id:301)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=297&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail.form (id:297)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail.form (id:297)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=377&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail.form.fetchmail (id:377)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail.form.fetchmail (id:377)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=299&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail.search (id:299)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail.search (id:299)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=298&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail.tree (id:298)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail.tree (id:298)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=290&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message.subtype.form (id:290)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message.subtype.form (id:290)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=287&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.resend.cancel.view.form (id:287)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.resend.cancel.view.form (id:287)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=288&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.resend.message.view.form (id:288)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.resend.message.view.form (id:288)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=309&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.shortcode.form (id:309)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.shortcode.form (id:309)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=308&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.shortcode.tree (id:308)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.shortcode.tree (id:308)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=292&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.tracking.value.form (id:292)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.tracking.value.form (id:292)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=325&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_bounce_catchall (id:325)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_bounce_catchall (id:325)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=326&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_channel_notify_moderation (id:326)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_channel_notify_moderation (id:326)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=327&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_channel_send_guidelines (id:327)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_channel_send_guidelines (id:327)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=335&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.js_test_assets (id:335)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.js_test_assets (id:335)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=390&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail_enterprise.qunit_mobile_suite (id:390)&quot; class=&quot;o_text_overflow&quot;>
+                    mail_enterprise.qunit_mobile_suite (id:390)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=319&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_notification_borders (id:319)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_notification_borders (id:319)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=320&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.mail_notification_light (id:320)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.mail_notification_light (id:320)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=336&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.qunit_suite (id:336)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.qunit_suite (id:336)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=384&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail_bot.qunit_suite (id:384)&quot; class=&quot;o_text_overflow&quot;>
+                    mail_bot.qunit_suite (id:384)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=389&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail_enterprise.qunit_suite (id:389)&quot; class=&quot;o_text_overflow&quot;>
+                    mail_enterprise.qunit_suite (id:389)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=383&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail_bot.assets_backend (id:383)&quot; class=&quot;o_text_overflow&quot;>
+                    mail_bot.assets_backend (id:383)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=355&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_map.assets_backend (id:355)&quot; class=&quot;o_text_overflow&quot;>
+                    web_map.assets_backend (id:355)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=324&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message_activity_assigned (id:324)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message_activity_assigned (id:324)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=323&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message_activity_done (id:323)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message_activity_done (id:323)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=318&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message_notification_email (id:318)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message_notification_email (id:318)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=337&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message_origin_link (id:337)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message_origin_link (id:337)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=435&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.message_thread (id:435)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.message_thread (id:435)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=322&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message_user_assigned (id:322)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message_user_assigned (id:322)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=208&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.minimal_layout (id:208)&quot; class=&quot;o_text_overflow&quot;>
+                    web.minimal_layout (id:208)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=405&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.minimal_layout (id:405)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.minimal_layout (id:405)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=171&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.onboarding_company_step (id:171)&quot; class=&quot;o_text_overflow&quot;>
+                    base.onboarding_company_step (id:171)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=170&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.onboarding_confetti (id:170)&quot; class=&quot;o_text_overflow&quot;>
+                    base.onboarding_confetti (id:170)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=168&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.onboarding_container (id:168)&quot; class=&quot;o_text_overflow&quot;>
+                    base.onboarding_container (id:168)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=169&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.onboarding_step (id:169)&quot; class=&quot;o_text_overflow&quot;>
+                    base.onboarding_step (id:169)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=614&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_theme_install.onboarding_website_theme_step (id:614)&quot; class=&quot;o_text_overflow&quot;>
+                    website_theme_install.onboarding_website_theme_step (id:614)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=522&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.one_page_line (id:522)&quot; class=&quot;o_text_overflow&quot;>
+                    website.one_page_line (id:522)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=511&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.page_404 (id:511)&quot; class=&quot;o_text_overflow&quot;>
+                    website.page_404 (id:511)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=167&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;paper_format_view_form (id:167)&quot; class=&quot;o_text_overflow&quot;>
+                    paper_format_view_form (id:167)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=166&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;paper_format_view_tree (id:166)&quot; class=&quot;o_text_overflow&quot;>
+                    paper_format_view_tree (id:166)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=361&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;partner.view.contact.button (id:361)&quot; class=&quot;o_text_overflow&quot;>
+                    partner.view.contact.button (id:361)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=400&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;phone.blacklist.view.form (id:400)&quot; class=&quot;o_text_overflow&quot;>
+                    phone.blacklist.view.form (id:400)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=401&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;phone.blacklist.view.search (id:401)&quot; class=&quot;o_text_overflow&quot;>
+                    phone.blacklist.view.search (id:401)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=399&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;phone.blacklist.view.tree (id:399)&quot; class=&quot;o_text_overflow&quot;>
+                    phone.blacklist.view.tree (id:399)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=439&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.share.wizard (id:439)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.share.wizard (id:439)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=438&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_404 (id:438)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_404 (id:438)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=513&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.portal_404 (id:513)&quot; class=&quot;o_text_overflow&quot;>
+                    website.portal_404 (id:513)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=431&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_my_details (id:431)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_my_details (id:431)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=413&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;portal.portal_share_template (id:413)&quot; class=&quot;o_text_overflow&quot;>
+                    portal.portal_share_template (id:413)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=218&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.preview_externalreport (id:218)&quot; class=&quot;o_text_overflow&quot;>
+                    web.preview_externalreport (id:218)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=217&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.preview_internalreport (id:217)&quot; class=&quot;o_text_overflow&quot;>
+                    web.preview_internalreport (id:217)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=493&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.publish_management (id:493)&quot; class=&quot;o_text_overflow&quot;>
+                    website.publish_management (id:493)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=494&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.publish_short (id:494)&quot; class=&quot;o_text_overflow&quot;>
+                    website.publish_short (id:494)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=240&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.qunit_suite (id:240)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.qunit_suite (id:240)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=392&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;partner_autocomplete.qunit_suite (id:392)&quot; class=&quot;o_text_overflow&quot;>
+                    partner_autocomplete.qunit_suite (id:392)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=476&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.qunit_suite (id:476)&quot; class=&quot;o_text_overflow&quot;>
+                    website.qunit_suite (id:476)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=512&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.qweb_500 (id:512)&quot; class=&quot;o_text_overflow&quot;>
+                    website.qweb_500 (id:512)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=492&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.record_cover (id:492)&quot; class=&quot;o_text_overflow&quot;>
+                    website.record_cover (id:492)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=599&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.remove_external_snippets (id:599)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.remove_external_snippets (id:599)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=204&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.report_assets_common (id:204)&quot; class=&quot;o_text_overflow&quot;>
+                    web.report_assets_common (id:204)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=205&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.report_assets_pdf (id:205)&quot; class=&quot;o_text_overflow&quot;>
+                    web.report_assets_pdf (id:205)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=403&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.report_assets_snailmail (id:403)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.report_assets_snailmail (id:403)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=84&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.report_irmodeloverview (id:84)&quot; class=&quot;o_text_overflow&quot;>
+                    base.report_irmodeloverview (id:84)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=96&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.report_irmodulereference (id:96)&quot; class=&quot;o_text_overflow&quot;>
+                    base.report_irmodulereference (id:96)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=404&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.report_layout (id:404)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.report_layout (id:404)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=131&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.bank.form (id:131)&quot; class=&quot;o_text_overflow&quot;>
+                    res.bank.form (id:131)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=132&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.bank.tree (id:132)&quot; class=&quot;o_text_overflow&quot;>
+                    res.bank.tree (id:132)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=133&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.bank.view.search (id:133)&quot; class=&quot;o_text_overflow&quot;>
+                    res.bank.view.search (id:133)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=109&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.company.form (id:109)&quot; class=&quot;o_text_overflow&quot;>
+                    res.company.form (id:109)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=266&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.company.form.inherit.social.media (id:266)&quot; class=&quot;o_text_overflow&quot;>
+                    res.company.form.inherit.social.media (id:266)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=397&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.company.form.inherit.web.partner.autocomplete (id:397)&quot; class=&quot;o_text_overflow&quot;>
+                    res.company.form.inherit.web.partner.autocomplete (id:397)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=111&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.company.kanban (id:111)&quot; class=&quot;o_text_overflow&quot;>
+                    res.company.kanban (id:111)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=110&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.company.tree (id:110)&quot; class=&quot;o_text_overflow&quot;>
+                    res.company.tree (id:110)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=597&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings form (id:597)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings form (id:597)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=165&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form (id:165)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form (id:165)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=366&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.auth.signup (id:366)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.auth.signup (id:366)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=284&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.base.setup.iap (id:284)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.base.setup.iap (id:284)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=378&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.fetchmail (id:378)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.fetchmail (id:378)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=317&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.mail (id:317)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.mail (id:317)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=362&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.mail.push (id:362)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.mail.push (id:362)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=398&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.partner.autcomplete (id:398)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.partner.autcomplete (id:398)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=402&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.saas.unsplash (id:402)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.saas.unsplash (id:402)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=457&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.sms (id:457)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.sms (id:457)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=363&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.web.unsplash (id:363)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.web.unsplash (id:363)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=615&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.website_theme_install (id:615)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.website_theme_install (id:615)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=4&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.view.base (id:4)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.view.base (id:4)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=138&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.form (id:138)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.form (id:138)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=140&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.group.form (id:140)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.group.form (id:140)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=139&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.group.tree (id:139)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.group.tree (id:139)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=142&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.state.form (id:142)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.state.form (id:142)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=143&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.state.search (id:143)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.state.search (id:143)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=141&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.state.tree (id:141)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.state.tree (id:141)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=137&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.country.tree (id:137)&quot; class=&quot;o_text_overflow&quot;>
+                    res.country.tree (id:137)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=150&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.form (id:150)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.form (id:150)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=149&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.kanban (id:149)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.kanban (id:149)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=146&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.rate.form (id:146)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.rate.form (id:146)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=144&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.rate.search (id:144)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.rate.search (id:144)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=145&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.rate.tree (id:145)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.rate.tree (id:145)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=147&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.search (id:147)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.search (id:147)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=148&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.currency.tree (id:148)&quot; class=&quot;o_text_overflow&quot;>
+                    res.currency.tree (id:148)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=154&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.groups.form (id:154)&quot; class=&quot;o_text_overflow&quot;>
+                    res.groups.form (id:154)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=153&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.groups.search (id:153)&quot; class=&quot;o_text_overflow&quot;>
+                    res.groups.search (id:153)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=113&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.lang.form (id:113)&quot; class=&quot;o_text_overflow&quot;>
+                    res.lang.form (id:113)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=279&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.lang.form.http_routing.inherit (id:279)&quot; class=&quot;o_text_overflow&quot;>
+                    res.lang.form.http_routing.inherit (id:279)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=114&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.lang.search (id:114)&quot; class=&quot;o_text_overflow&quot;>
+                    res.lang.search (id:114)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=112&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.lang.tree (id:112)&quot; class=&quot;o_text_overflow&quot;>
+                    res.lang.tree (id:112)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=280&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.lang.tree.model.inherit (id:280)&quot; class=&quot;o_text_overflow&quot;>
+                    res.lang.tree.model.inherit (id:280)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=350&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.activity (id:350)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.activity (id:350)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=136&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.bank.search (id:136)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.bank.search (id:136)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=135&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.bank.tree (id:135)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.bank.tree (id:135)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=127&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.category.view.search (id:127)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.category.view.search (id:127)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=394&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form.inherit.partner.autocomplete (id:394)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form.inherit.partner.autocomplete (id:394)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=358&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form.inherit.web.map (id:358)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form.inherit.web.map (id:358)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=585&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form.website.inherit (id:585)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form.website.inherit (id:585)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=130&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.industry.view.search (id:130)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.industry.view.search (id:130)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=124&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.kanban (id:124)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.kanban (id:124)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=268&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.kanban.inherit (id:268)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.kanban.inherit (id:268)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=123&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.select (id:123)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.select (id:123)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=395&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.short.form.inherit.partner.autocomplete (id:395)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.short.form.inherit.partner.autocomplete (id:395)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=118&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.simplified.form (id:118)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.simplified.form (id:118)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=396&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.simplified.form.inherit.partner.autocomplete (id:396)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.simplified.form.inherit.partner.autocomplete (id:396)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=116&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.title.form (id:116)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.title.form (id:116)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=115&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.title.tree (id:115)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.title.tree (id:115)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=348&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.view.form.inherit.mail (id:348)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.view.form.inherit.mail (id:348)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=349&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.view.search.inherit.mail (id:349)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.view.search.inherit.mail (id:349)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=156&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.form (id:156)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.form (id:156)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=367&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.form.inherit (id:367)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.form.inherit (id:367)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=332&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.form.mail (id:332)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.form.mail (id:332)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=160&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.groups (id:160)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.groups (id:160)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=158&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.kanban (id:158)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.kanban (id:158)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=331&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.preferences.form.mail (id:331)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.preferences.form.mail (id:331)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=387&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.preferences.form.notification.alert (id:387)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.preferences.form.notification.alert (id:387)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=159&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.search (id:159)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.search (id:159)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=157&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.tree (id:157)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.tree (id:157)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=368&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.tree.inherit (id:368)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.tree.inherit (id:368)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=386&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.view.form.mail_bot (id:386)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.view.form.mail_bot (id:386)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=385&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.view.form.preferences.mail_bot (id:385)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.view.form.preferences.mail_bot (id:385)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=514&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.robots (id:514)&quot; class=&quot;o_text_overflow&quot;>
+                    website.robots (id:514)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=445&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;saas_trial.assets_backend (id:445)&quot; class=&quot;o_text_overflow&quot;>
+                    saas_trial.assets_backend (id:445)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=446&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;saas_trial.assets_common (id:446)&quot; class=&quot;o_text_overflow&quot;>
+                    saas_trial.assets_common (id:446)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=447&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;saas_trial.assets_db_validation (id:447)&quot; class=&quot;o_text_overflow&quot;>
+                    saas_trial.assets_db_validation (id:447)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=517&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.sitemap_index_xml (id:517)&quot; class=&quot;o_text_overflow&quot;>
+                    website.sitemap_index_xml (id:517)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=515&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.sitemap_locs (id:515)&quot; class=&quot;o_text_overflow&quot;>
+                    website.sitemap_locs (id:515)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=516&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.sitemap_xml (id:516)&quot; class=&quot;o_text_overflow&quot;>
+                    website.sitemap_xml (id:516)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=452&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.cancel.form (id:452)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.cancel.form (id:452)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=453&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.composer.view.form (id:453)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.composer.view.form (id:453)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=455&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.resend.form (id:455)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.resend.form (id:455)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=461&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.sms.view.form (id:461)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.sms.view.form (id:461)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=463&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.sms.view.search (id:463)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.sms.view.search (id:463)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=462&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.sms.view.tree (id:462)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.sms.view.tree (id:462)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=454&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.template.preview.form (id:454)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.template.preview.form (id:454)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=464&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.template.view.form (id:464)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.template.view.form (id:464)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=466&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.template.view.search (id:466)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.template.view.search (id:466)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=465&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.template.view.tree (id:465)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.template.view.tree (id:465)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=459&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.assets_backend (id:459)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.assets_backend (id:459)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=460&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;sms.qunit_suite (id:460)&quot; class=&quot;o_text_overflow&quot;>
+                    sms.qunit_suite (id:460)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=410&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.letter.cancel.form (id:410)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.letter.cancel.form (id:410)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=407&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.letter.form (id:407)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.letter.form (id:407)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=411&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.letter.format.error.form (id:411)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.letter.format.error.form (id:411)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=412&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.letter.missing.required.fields.form (id:412)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.letter.missing.required.fields.form (id:412)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=406&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.letter.tree (id:406)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.letter.tree (id:406)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=409&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;snailmail.qunit_suite (id:409)&quot; class=&quot;o_text_overflow&quot;>
+                    snailmail.qunit_suite (id:409)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=243&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.snippet_options (id:243)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.snippet_options (id:243)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=555&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.snippet_options (id:555)&quot; class=&quot;o_text_overflow&quot;>
+                    website.snippet_options (id:555)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=601&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form.snippet_options (id:601)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form.snippet_options (id:601)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=242&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_editor.snippets (id:242)&quot; class=&quot;o_text_overflow&quot;>
+                    web_editor.snippets (id:242)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=553&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.snippets (id:553)&quot; class=&quot;o_text_overflow&quot;>
+                    website.snippets (id:553)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=219&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.styles_company_report (id:219)&quot; class=&quot;o_text_overflow&quot;>
+                    web.styles_company_report (id:219)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=223&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;odoo_referral.assets_backend (id:223)&quot; class=&quot;o_text_overflow&quot;>
+                    odoo_referral.assets_backend (id:223)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=496&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.theme_customize (id:496)&quot; class=&quot;o_text_overflow&quot;>
+                    website.theme_customize (id:496)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=265&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;tour.search (id:265)&quot; class=&quot;o_text_overflow&quot;>
+                    tour.search (id:265)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=261&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_tour.assets_common (id:261)&quot; class=&quot;o_text_overflow&quot;>
+                    web_tour.assets_common (id:261)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=262&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_tour.assets_backend (id:262)&quot; class=&quot;o_text_overflow&quot;>
+                    web_tour.assets_backend (id:262)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=523&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.user_navbar (id:523)&quot; class=&quot;o_text_overflow&quot;>
+                    website.user_navbar (id:523)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=590&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_enterprise.user_navbar (id:590)&quot; class=&quot;o_text_overflow&quot;>
+                    website_enterprise.user_navbar (id:590)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=591&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_enterprise.user_navbar_inherit_website_enterprise (id:591)&quot; class=&quot;o_text_overflow&quot;>
+                    website_enterprise.user_navbar_inherit_website_enterprise (id:591)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=586&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;view_base_language_install.inherit (id:586)&quot; class=&quot;o_text_overflow&quot;>
+                    view_base_language_install.inherit (id:586)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=254&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_gantt.assets_backend (id:254)&quot; class=&quot;o_text_overflow&quot;>
+                    web_gantt.assets_backend (id:254)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=255&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_gantt.qunit_suite (id:255)&quot; class=&quot;o_text_overflow&quot;>
+                    web_gantt.qunit_suite (id:255)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=200&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.benchmark_suite (id:200)&quot; class=&quot;o_text_overflow&quot;>
+                    web.benchmark_suite (id:200)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=197&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.js_tests_assets (id:197)&quot; class=&quot;o_text_overflow&quot;>
+                    web.js_tests_assets (id:197)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=199&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.qunit_mobile_suite (id:199)&quot; class=&quot;o_text_overflow&quot;>
+                    web.qunit_mobile_suite (id:199)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=198&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.qunit_suite (id:198)&quot; class=&quot;o_text_overflow&quot;>
+                    web.qunit_suite (id:198)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=201&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web.webclient_bootstrap (id:201)&quot; class=&quot;o_text_overflow&quot;>
+                    web.webclient_bootstrap (id:201)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=226&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_diagram.assets_backend (id:226)&quot; class=&quot;o_text_overflow&quot;>
+                    web_diagram.assets_backend (id:226)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=227&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_diagram.qunit_suite (id:227)&quot; class=&quot;o_text_overflow&quot;>
+                    web_diagram.qunit_suite (id:227)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=249&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.assets_backend (id:249)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.assets_backend (id:249)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=248&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.assets_common (id:248)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.assets_common (id:248)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=259&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_kanban_gauge.assets_backend (id:259)&quot; class=&quot;o_text_overflow&quot;>
+                    web_kanban_gauge.assets_backend (id:259)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=356&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_map.qunit_suite (id:356)&quot; class=&quot;o_text_overflow&quot;>
+                    web_map.qunit_suite (id:356)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=360&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_mobile.qunit_suite (id:360)&quot; class=&quot;o_text_overflow&quot;>
+                    web_mobile.qunit_suite (id:360)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=264&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_tour.tour tree (id:264)&quot; class=&quot;o_text_overflow&quot;>
+                    web_tour.tour tree (id:264)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=252&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.webclient_bootstrap (id:252)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.webclient_bootstrap (id:252)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=253&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;web_enterprise.webclient_login (id:253)&quot; class=&quot;o_text_overflow&quot;>
+                    web_enterprise.webclient_login (id:253)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=556&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.form (id:556)&quot; class=&quot;o_text_overflow&quot;>
+                    website.form (id:556)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=613&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.form (id:613)&quot; class=&quot;o_text_overflow&quot;>
+                    website.form (id:613)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=561&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.menu.form (id:561)&quot; class=&quot;o_text_overflow&quot;>
+                    website.menu.form (id:561)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=563&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.menu.search (id:563)&quot; class=&quot;o_text_overflow&quot;>
+                    website.menu.search (id:563)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=562&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.menu.tree (id:562)&quot; class=&quot;o_text_overflow&quot;>
+                    website.menu.tree (id:562)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=558&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.page.form (id:558)&quot; class=&quot;o_text_overflow&quot;>
+                    website.page.form (id:558)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=559&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.page.list (id:559)&quot; class=&quot;o_text_overflow&quot;>
+                    website.page.list (id:559)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=560&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.page.view.search (id:560)&quot; class=&quot;o_text_overflow&quot;>
+                    website.page.view.search (id:560)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=577&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.rewrite form (id:577)&quot; class=&quot;o_text_overflow&quot;>
+                    website.rewrite form (id:577)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=578&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.rewrite.list (id:578)&quot; class=&quot;o_text_overflow&quot;>
+                    website.rewrite.list (id:578)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=579&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.rewrite.search (id:579)&quot; class=&quot;o_text_overflow&quot;>
+                    website.rewrite.search (id:579)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=567&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.track.view.graph (id:567)&quot; class=&quot;o_text_overflow&quot;>
+                    website.track.view.graph (id:567)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=575&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.track.view.graph (id:575)&quot; class=&quot;o_text_overflow&quot;>
+                    website.track.view.graph (id:575)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=568&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.track.view.search (id:568)&quot; class=&quot;o_text_overflow&quot;>
+                    website.track.view.search (id:568)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=566&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.track.view.tree (id:566)&quot; class=&quot;o_text_overflow&quot;>
+                    website.track.view.tree (id:566)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=574&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.track.view.tree (id:574)&quot; class=&quot;o_text_overflow&quot;>
+                    website.track.view.tree (id:574)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=557&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.tree (id:557)&quot; class=&quot;o_text_overflow&quot;>
+                    website.tree (id:557)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=570&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.form (id:570)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.form (id:570)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=606&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.form.inherit.website.mass.mailing.sms (id:606)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.form.inherit.website.mass.mailing.sms (id:606)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=572&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.graph (id:572)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.graph (id:572)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=569&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.kanban (id:569)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.kanban (id:569)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=607&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.kanban.inherit.website.sms (id:607)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.kanban.inherit.website.sms (id:607)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=573&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.search (id:573)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.search (id:573)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=571&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.tree (id:571)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.tree (id:571)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=608&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.visitor.view.tree.inherit.website.sms (id:608)&quot; class=&quot;o_text_overflow&quot;>
+                    website.visitor.view.tree.inherit.website.sms (id:608)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=596&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form_editor.ir.model.fields.view.form (id:596)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form_editor.ir.model.fields.view.form (id:596)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=595&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_form_editor.ir.model.view.form (id:595)&quot; class=&quot;o_text_overflow&quot;>
+                    website_form_editor.ir.model.view.form (id:595)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=161&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.preferences.form (id:161)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.preferences.form (id:161)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=101&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Module Upgrade Install (id:101)&quot; class=&quot;o_text_overflow&quot;>
+                    Module Upgrade Install (id:101)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=489&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website.login_layout (id:489)&quot; class=&quot;o_text_overflow&quot;>
+                    website.login_layout (id:489)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=313&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.activity.view.form.popup (id:313)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.activity.view.form.popup (id:313)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=294&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message.form (id:294)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message.form (id:294)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=293&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message.tree (id:293)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message.tree (id:293)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=342&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.moderation.view.tree (id:342)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.moderation.view.tree (id:342)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=576&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.website (id:576)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.website (id:576)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=119&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.form.address (id:119)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.form.address (id:119)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=354&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.view.form.short.inherit.mail (id:354)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.view.form.short.inherit.mail (id:354)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=295&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.message.search (id:295)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.message.search (id:295)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=343&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;mail.moderation.view.search (id:343)&quot; class=&quot;o_text_overflow&quot;>
+                    mail.moderation.view.search (id:343)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=357&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.config.settings.view.form.inherit.map (id:357)&quot; class=&quot;o_text_overflow&quot;>
+                    res.config.settings.view.form.inherit.map (id:357)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=611&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;Themes Search (id:611)&quot; class=&quot;o_text_overflow&quot;>
+                    Themes Search (id:611)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=587&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;odoo_referral_portal.portal_my_home_odoo_referral (id:587)&quot; class=&quot;o_text_overflow&quot;>
+                    odoo_referral_portal.portal_my_home_odoo_referral (id:587)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=612&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;website_theme_install.customize_modal (id:612)&quot; class=&quot;o_text_overflow&quot;>
+                    website_theme_install.customize_modal (id:612)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=451&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.users.paying.form (id:451)&quot; class=&quot;o_text_overflow&quot;>
+                    res.users.paying.form (id:451)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=122&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;res.partner.view.form.private (id:122)&quot; class=&quot;o_text_overflow&quot;>
+                    res.partner.view.form.private (id:122)
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=172&amp;amp;view_type=form&amp;amp;model=ir.ui.view&quot; title=&quot;base.company.onboarding.form (id:172)&quot; class=&quot;o_text_overflow&quot;>
+                    base.company.onboarding.form (id:172)
+                </a>
+            </li>
+        </ul>
+
+        <b>Menús</b>
+        <ul>
+            <li>
+                <a href=&quot;/web#id=1&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Menú principal por defecto &quot; class=&quot;o_text_overflow&quot;>
+                    Menú principal por defecto
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=4&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Top Menu for Website 1&quot; class=&quot;o_text_overflow&quot;>
+                    Top Menu for Website 1
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=2&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Inicio&quot; class=&quot;o_text_overflow&quot;>
+                    Inicio
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=5&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Home&quot; class=&quot;o_text_overflow&quot;>
+                    Home
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=3&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Contáctenos&quot; class=&quot;o_text_overflow&quot;>
+                    Contáctenos
+                </a>
+            </li><li>
+                <a href=&quot;/web#id=6&amp;amp;view_type=form&amp;amp;model=website.menu&quot; title=&quot;Contact us&quot; class=&quot;o_text_overflow&quot;>
+                    Contact us
+                </a>
+            </li>
+        </ul>
+
+
+    " data-html="true" title="" data-original-title="Dependencias">6 páginas, 605 plantillas, 6 menús</a>)
+</span>
+                    </div>
+                </div>
+                <div class="form-group row ask_for_redirect d-none">
+                    <label class="col-form-label col-md-3 redirect_type d-none" for="redirect_type">Tipo</label>
+                    <div class="col-md-6 redirect_type d-none">
+                        <select class="form-control" id="redirect_type">
+                            <option value="404">404: 404 Not Found</option><option value="301">301: 301 Moved permanently</option><option value="302">302: 302 Moved temporarily</option><option value="308">308: 308 Redirect / Rewrite</option>
+                        </select>
+                    </div>
+                </div>
+<div class="form-group row">
+                    <label class="control-label col-md-5" for="is_menu">Mostrar en el menú superior</label>
+                    <div class="col-sm-2">
+                        <label class="o_switch" for="is_menu">
+                            <input type="checkbox" id="is_menu">
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-5" for="is_homepage">Usar como página de inicio</label>
+                    <div class="col-sm-2">
+                        <label class="o_switch" for="is_homepage">
+                            <input type="checkbox" checked="true" id="is_homepage">
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-5" for="is_indexed">
+                        Indexado
+                        <i class="fa fa-question-circle-o" title="Ocultar esta página de los resultados de búsqueda" role="img" aria-label="Info"></i>
+                    </label>
+                    <div class="col-md-2">
+                        <label class="o_switch" for="is_indexed">
+                            <input type="checkbox" checked="true" id="is_indexed">
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-5" for="is_published">Publicar</label>
+                    <div class="col-sm-2">
+                        <label class="o_switch js_publish_btn" for="is_published">
+                            <input type="checkbox" checked="true" id="is_published">
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="control-label col-md-5" for="date_publish">Fecha de publicación</label>
+                    <div class="col-md-7">
+                        <div class="input-group date" id="date_publish_container" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#date_publish_container" id="date_publish">
+                            <div class="input-group-append" data-target="#date_publish_container" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Aceptar</button>
+            <button type="button" class="btn btn-outline-secondary">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Admin modal page end -->
+
         <!-- /.container-fluid -->
 
       </div>
