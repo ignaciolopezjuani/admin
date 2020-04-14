@@ -379,265 +379,278 @@
 
           <!-- Content Row -->
 
-          <!-- Publicaciones -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Publicaciones Pendientes</h6>
+          <nav class="nav nav-pills flex-column flex-sm-row my-3">
+            <a class="flex-sm-fill text-sm-center nav-link active" id="publications-nav-item" data-toggle="tab" href="#publications-list" role="tab" aria-controls="publications-nav-item" aria-selected="true">Publicaciones <span class="badge badge-danger badge-counter mx-2">3</span></a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="nominations-nav-item" data-toggle="tab" href="#nominations-list" role="tab" aria-controls="nominations-nav-item" aria-selected="false">Nominaciones <span class="badge badge-danger badge-counter mx-2">1</span></a>
+            <a class="flex-sm-fill text-sm-center nav-link" id="revisions-nav-item" data-toggle="tab" href="#revisions-list" role="tab" aria-controls="revisions-nav-item" aria-selected="false">Revisiones <span class="badge badge-danger badge-counter mx-2">2</span></a>
+          </nav>
+
+          <div class="tab-content" id="publications-nominations-revisions-tabContent">
+
+            <!-- Publicaciones -->
+            <div class="row tab-pane fade show active" role="tabpanel" aria-labelledby="publications-nav-item" id="publications-list">
+              <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Publicaciones Pendientes</h6>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                     <div class="row">
+                       <div class="col-sm-12">
+                         <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Prioridad </th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr role="row" class="odd alsert alert-danger">
+                          <td class="sorting_1">Sobre Nosotros</td>
+                          <td>Admin</td>
+                      	<td>01/02/03</td>
+                      	<td>Alta</td>
+                      	<td class="text-center">
+                      		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                              <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                      		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
+                      		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                      	</td>
+                      </tr>
+                      <tr role="row" class="even alsert alert-warning">
+                          <td class="sorting_1">Sobre Nosotros</td>
+                          <td>Admin</td>
+                      	<td>01/02/03</td>
+                      	<td>Media</td>
+                      	<td class="text-center">
+                      		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                              <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                      		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
+                      		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                      	</td>
+                      </tr>
+                      <tr role="row" class="odd alsert alert-success">
+                        <td class="sorting_1">Sobre Nosotros</td>
+                        <td>Admin</td>
+                    	<td>01/02/03</td>
+                    	<td>Baja</td>
+                    	<td class="text-center">
+                    		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                            <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                    		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
+                    		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                    	</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </div></div>
+                <div class="row">
+                  <div class="mx-auto">
+                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                      <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="dataTable_next">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                   <div class="row">
-                     <div class="col-sm-12">
-                       <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
-                  <thead>
-                    <tr role="row">
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Prioridad </th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr role="row" class="odd alsert alert-danger">
+            </div>
+
+            <!-- Nominaciones-->
+            <div class="row tab-pane fade" role="tabpanel" aria-labelledby="nominations-nav-item" id="nominations-list">
+              <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Nominaciones pendientes</h6>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                     <div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="row" class="odd">
                         <td class="sorting_1">Sobre Nosotros</td>
                         <td>Admin</td>
-                    	<td>01/02/03</td>
-                    	<td>Alta</td>
-                    	<td class="text-center">
-                    		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                            <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                    		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
-                    		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                    	</td>
-                    </tr>
-                    <tr role="row" class="even alsert alert-warning">
-                        <td class="sorting_1">Sobre Nosotros</td>
-                        <td>Admin</td>
-                    	<td>01/02/03</td>
-                    	<td>Media</td>
-                    	<td class="text-center">
-                    		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                            <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                    		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
-                    		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                    	</td>
-                    </tr>
-                    <tr role="row" class="odd alsert alert-success">
-                      <td class="sorting_1">Sobre Nosotros</td>
-                      <td>Admin</td>
-                  	<td>01/02/03</td>
-                  	<td>Baja</td>
-                  	<td class="text-center">
-                  		<a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                        <td>01/02/03</td>
+                        <td class="text-center">
+                          <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
                           <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                  		<a class="mx-2" href="#"><i class="fas fa-trash"></i></a>
-                  		<a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                  	</td>
-                  </tr>
-                </tbody>
-                </table>
-              </div></div>
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                    <ul class="pagination">
-                      <li class="paginate_button page-item previous disabled" id="dataTable_previous">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-                      </li>
-                      <li class="paginate_button page-item active">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-                      </li>
-                      <li class="paginate_button page-item next" id="dataTable_next">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-                      </li>
-                    </ul>
+                          <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                        </td>
+                      </tr>
+                      <tr role="row" class="even">
+                        <td class="sorting_1">MOTO</td>
+                        <td>Adminia</td>
+                        <td>02/03/04</td>
+                        <td class="text-center">
+                          <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div></div>
+                <div class="row">
+                  <div class="mx-auto">
+                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                      <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="dataTable_next">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Nominaciones-->
-
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Nominaciones pendientes</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                   <div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
-                  <thead>
-                    <tr role="row">
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <tr role="row" class="odd">
-                      <td class="sorting_1">Sobre Nosotros</td>
-                      <td>Admin</td>
-                      <td>01/02/03</td>
-                      <td class="text-center">
-                        <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                      </td>
-                    </tr>
-                    <tr role="row" class="even">
-                      <td class="sorting_1">MOTO</td>
-                      <td>Adminia</td>
-                      <td>02/03/04</td>
-                      <td class="text-center">
-                        <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div></div>
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                    <ul class="pagination">
-                      <li class="paginate_button page-item previous disabled" id="dataTable_previous">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-                      </li>
-                      <li class="paginate_button page-item active">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-                      </li>
-                      <li class="paginate_button page-item next" id="dataTable_next">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
+            </div>
+
+            <!-- Revision -->
+            <div class="row tab-pane fade" role="tabpanel" aria-labelledby="publications-nav-item" id="revisions-list">
+              <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Revisiones pendientes</h6>
               </div>
-            </div>
-          </div>
-
-          <!-- Revision -->
-
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Revisiones pendientes</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                   <div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
-                  <thead>
-                    <tr role="row">
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
-                      <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <tr role="row" class="odd">
-                      <td class="sorting_1">Sobre Nosotros</td>
-                      <td>Admin</td>
-                      <td>01/02/03</td>
-                      <td class="text-center">
-                        <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                      </td>
-                    </tr>
-                    <tr role="row" class="even">
-                      <td class="sorting_1">MOTO</td>
-                      <td>Adminia</td>
-                      <td>02/03/04</td>
-                      <td class="text-center">
-                        <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
-                        <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div></div>
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                    <ul class="pagination">
-                      <li class="paginate_button page-item previous disabled" id="dataTable_previous">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-                      </li>
-                      <li class="paginate_button page-item active">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
-                      </li>
-                      <li class="paginate_button page-item ">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-                      </li>
-                      <li class="paginate_button page-item next" id="dataTable_next">
-                        <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-                      </li>
-                    </ul>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                     <div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                    <thead>
+                      <tr role="row">
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Título</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Autor</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Fecha</th>
+                        <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="row" class="odd">
+                        <td class="sorting_1">Sobre Nosotros</td>
+                        <td>Admin</td>
+                        <td>01/02/03</td>
+                        <td class="text-center">
+                          <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                        </td>
+                      </tr>
+                      <tr role="row" class="even">
+                        <td class="sorting_1">MOTO</td>
+                        <td>Adminia</td>
+                        <td>02/03/04</td>
+                        <td class="text-center">
+                          <a class="mx-2" href="#"><i class="fas fa-eye"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-pencil-alt"></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-trash"></i></i></a>
+                          <a class="mx-2" href="#"><i class="fas fa-check"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div></div>
+                <div class="row">
+                  <div class="mx-auto">
+                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                      <ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="dataTable_next">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
               </div>
             </div>
-          </div>
+            </div>
+            <!-- Content Row End -->
 
-          <!-- Content Row End -->
+          </div>
 
         </div>
         <!-- /.container-fluid -->
